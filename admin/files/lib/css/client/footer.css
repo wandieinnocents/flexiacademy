@@ -1,0 +1,245 @@
+footer {
+    background-color : #111111;
+    color            : #FBFBFB;
+    color            : rgba(255, 255, 255, 0.7);
+}
+
+footer h5 {
+    color  : #FFFFFF;
+    margin : 25px 0;
+}
+
+@media (max-width : 575px) {
+    footer h5 {
+        margin : 25px 0 10px 0;
+    }
+}
+
+footer ul {
+    list-style   : none;
+    padding-left : 0;
+}
+
+footer ul li {
+    margin-bottom : 5px;
+}
+
+footer ul li a {
+    -moz-transition    : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    -webkit-transition : all 0.3s ease-in-out;
+    -ms-transition     : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+    display            : inline-block;
+    position           : relative;
+    color              : #FFFFFF;
+    opacity            : 0.7;
+}
+
+footer ul li a:hover {
+    color   : #3F9FFF;
+    opacity : 1;
+}
+
+footer ul li a i {
+    margin-right : 10px;
+    color        : #FFFFFF;
+}
+
+footer ul.links li a:hover {
+    -webkit-transform : translate(5px, 0);
+    -moz-transform    : translate(5px, 0);
+    -ms-transform     : translate(5px, 0);
+    -o-transform      : translate(5px, 0);
+    transform         : translate(5px, 0);
+}
+
+footer ul.links li a:hover:after {
+    opacity : 1;
+    color   : #3F9FFF;
+}
+
+footer ul.links li a:after {
+    font-family        : 'Font Awesome 5 Free';
+    content            : "\f061";
+    position           : absolute;
+    margin-left        : 5px;
+    top                : 1px;
+    opacity            : 0;
+    -moz-transition    : all 0.5s ease;
+    -o-transition      : all 0.5s ease;
+    -webkit-transition : all 0.5s ease;
+    -ms-transition     : all 0.5s ease;
+    transition         : all 0.5s ease;
+}
+
+footer ul.contacts li a i {
+    margin-right : 10px;
+}
+
+footer #copy {
+    text-align : right;
+    font-size  : 80%;
+    opacity    : 0.7;
+}
+
+@media (max-width : 767px) {
+    footer #copy {
+        text-align : left;
+        margin     : 5px 0 20px 0;
+    }
+}
+
+footer.fake-footer {
+    display    : none;
+    visibility : hidden;
+}
+
+/*Newsletter */
+#newsletter .form-group {
+    position : relative;
+}
+
+#newsletter .loader {
+    position  : absolute;
+    right     : -20px;
+    top       : 11px;
+    color     : #FFFFFF;
+    font-size : 95%;
+}
+
+#newsletter h6 {
+    color  : #FFFFFF;
+    margin : 15px 0 15px 0;
+}
+
+#newsletter .form-group {
+    position : relative;
+}
+
+#newsletter input[type='email'] {
+    border                : 0;
+    height                : 40px;
+    -webkit-border-radius : 0;
+    -moz-border-radius    : 0;
+    -ms-border-radius     : 0;
+    border-radius         : 0;
+    padding-left          : 15px;
+    font-size             : 95%;
+    background-color      : #1B2632;
+    color                 : #FFFFFF;
+}
+
+#newsletter input[type='submit'] {
+    position              : absolute;
+    right                 : 0;
+    color                 : #FFFFFF;
+    font-size             : 13px;
+    font-weight           : 600;
+    top                   : 0;
+    border                : 0;
+    padding               : 0 12px;
+    height                : 40px;
+    cursor                : pointer;
+    -webkit-border-radius : 0 3px 3px 0;
+    -moz-border-radius    : 0 3px 3px 0;
+    -ms-border-radius     : 0 3px 3px 0;
+    border-radius         : 0 3px 3px 0;
+    background-color      : #1E1E1E;
+    -moz-transition       : all 0.3s ease-in-out;
+    -o-transition         : all 0.3s ease-in-out;
+    -webkit-transition    : all 0.3s ease-in-out;
+    -ms-transition        : all 0.3s ease-in-out;
+    transition            : all 0.3s ease-in-out;
+    outline               : none;
+}
+
+#newsletter input[type='submit']:hover {
+    background-color : #131313;
+}
+
+
+/*follow us links*/
+.follow_us {
+    margin-top              : 15px;
+    animation-delay         : 1.1s;
+    -webkit-animation-delay : 1.1s;
+    -moz-animation-delay    : 1.1s;
+}
+
+.follow_us h5 {
+    color : #FFFFFF;
+}
+
+.follow_us ul li {
+    display      : inline-block;
+    margin-right : 5px;
+    font-size    : 110%;
+}
+
+.follow_us ul li:first-child {
+    color          : #FFFFFF;
+    text-transform : uppercase;
+    font-weight    : 700;
+    letter-spacing : 2px;
+    font-size      : 95%;
+}
+
+.follow_us ul li a {
+    color   : #FFFFFF;
+    opacity : 0.7;
+}
+
+.follow_us ul li a:hover {
+    opacity : 1;
+}
+
+/* Additional links Footer */
+ul#additional_links {
+    margin    : 0;
+    color     : #555555;
+    font-size : 80%;
+}
+
+ul#additional_links li {
+    display      : inline-block;
+    margin-right : 15px;
+}
+
+ul#additional_links li:first-child {
+    margin-right : 20px;
+}
+
+ul#additional_links li:last-child:after {
+    content : "";
+}
+
+ul#additional_links li a {
+    color              : #FFFFFF;
+    opacity            : 0.5;
+    -moz-transition    : all 0.3s ease-in-out;
+    -o-transition      : all 0.3s ease-in-out;
+    -webkit-transition : all 0.3s ease-in-out;
+    -ms-transition     : all 0.3s ease-in-out;
+    transition         : all 0.3s ease-in-out;
+}
+
+ul#additional_links li a:hover {
+    opacity : 1;
+}
+
+ul#additional_links li:after {
+    content     : "|";
+    font-weight : 300;
+    position    : relative;
+    left        : 10px;
+}
+
+footer #divider {
+    border-bottom : solid 1px lightgray;
+}
+
+/* Wow on scroll event */
+.wow {
+    visibility : hidden;
+}

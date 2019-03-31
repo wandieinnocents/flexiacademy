@@ -1,0 +1,58 @@
+#filters {
+    background : #F3F3F3;
+}
+
+#filters_col {
+    min-height: 100vh;
+    background-color : #FFFFFF;
+    padding          : 20px 20px 15px 20px;
+}
+
+#filters_col label {
+    color       : #333333;
+    font-weight : normal;
+    font-size   : 13px;
+    font-size   : 0.8125rem;
+}
+
+a#filters_col_bt {
+    display     : block;
+    color       : #333333;
+    position    : relative;
+    font-size   : 16px;
+    font-size   : 1rem;
+    font-weight : 600;
+}
+
+a#filters_col_bt:before {
+    font-size   : 26px;
+    font-size   : 1.625rem;
+    position    : absolute;
+    right       : 0;
+    top         : 0;
+    line-height : 1;
+}
+
+.filter_type h6 {
+    border-top : 1px solid #EDEDED;
+    margin     : 15px 0;
+    padding    : 15px 0 0 0;
+    font-size  : 13px;
+    font-size  : 0.8125rem;
+}
+
+.filter_type ul {
+    list-style : none;
+    padding    : 0;
+    margin     : 0 0 15px 0;
+}
+
+.filter_type ul li {
+    margin-bottom : 5px;
+}
+
+.filter_type ul li:last-child {
+    margin-bottom : 0;
+}
+
+

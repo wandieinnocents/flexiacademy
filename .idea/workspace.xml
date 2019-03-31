@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="164" selection-start-line="164" selection-end-line="164" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-14">
+              <caret line="190" column="50" lean-forward="true" selection-start-line="190" selection-start-column="50" selection-end-line="190" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flexi_courses.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2360">
+              <caret line="257" column="72" selection-start-line="257" selection-start-column="72" selection-end-line="257" selection-end-column="72" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#1633#1639#0#HTML" expanded="true" />
+                <element signature="e#2018#2024#0#HTML" expanded="true" />
+                <element signature="e#2024#2030#0#HTML" expanded="true" />
+                <element signature="e#2417#2423#0#HTML" expanded="true" />
+                <element signature="e#2423#2429#0#HTML" expanded="true" />
+                <element signature="e#2814#2820#0#HTML" expanded="true" />
+                <element signature="e#2820#2826#0#HTML" expanded="true" />
+                <element signature="e#3209#3215#0#HTML" expanded="true" />
+                <element signature="e#3215#3221#0#HTML" expanded="true" />
+                <element signature="e#3606#3612#0#HTML" expanded="true" />
+                <element signature="e#3612#3618#0#HTML" expanded="true" />
+                <element signature="e#4379#4385#0#HTML" expanded="true" />
+                <element signature="e#4764#4770#0#HTML" expanded="true" />
+                <element signature="e#5152#5158#0#HTML" expanded="true" />
+                <element signature="e#5538#5544#0#HTML" expanded="true" />
+                <element signature="e#5923#5929#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/footer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/courses.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flexi_course_details.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.user-panel</find>
+      <find>.sidebar .sidebar-menu</find>
+      <find>.right-side</find>
+      <find>ion</find>
+      <find>fa</find>
+      <find>no-padding</find>
+      <find>40px</find>
+      <find>th</find>
+      <find>#user_header</find>
+      <find>#side_navbar #sidebar_menu &gt; li</find>
+      <find>45</find>
+      <find>right</find>
+      <find>.features</find>
+      <find>owl-dots</find>
+      <find>dotsClass</find>
+      <find>$rating &gt;= (</find>
+      <find>course-detail.html</find>
+      <find>.box_grid {</find>
+      <find>.box_grid figure .price {</find>
+      <find>.box_list {</find>
+      <find>#0</find>
+      <find>class=&quot;col-md-6&quot;</find>
+      <find>icon_like</find>
+      <find>icon_clock_alt</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#side_navbar  &gt; #user_panel</replace>
+      <replace>#side_navbar #sidebar_menu</replace>
+      <replace>#content_data</replace>
+      <replace>.info_user_header</replace>
+      <replace>#side_navbar &gt; ul#flexi_menu &gt; li &gt; ul &gt; li</replace>
+      <replace>td</replace>
+      <replace>#features</replace>
+      <replace>($rating &gt;=</replace>
+      <replace>flexi_course_details.php?course=2</replace>
+      <replace>#</replace>
+      <replace>class=&quot;col-12 col-md-6 col-lg-4&quot;</replace>
+      <replace>fas fa-thumbs-up</replace>
+      <replace>fas fa-clock</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admin/sys_footer.php" />
+        <option value="$PROJECT_DIR$/admin/test.html" />
+        <option value="$PROJECT_DIR$/admin/sys_links.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/admin/navbar.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/admin/navbar.less" />
+        <option value="$PROJECT_DIR$/admin/files/lib/less/navbar.less" />
+        <option value="$PROJECT_DIR$/admin/files/lib/less/vars.less" />
+        <option value="$PROJECT_DIR$/admin/files/lib/less/mixins.less" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/temp.txt" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/admin/css.css" />
+        <option value="$PROJECT_DIR$/admin/widgets.php" />
+        <option value="$PROJECT_DIR$/admin/tutorials_media.php" />
+        <option value="$PROJECT_DIR$/admin/tutorials_documents.php" />
+        <option value="$PROJECT_DIR$/admin/mailbox.php" />
+        <option value="$PROJECT_DIR$/admin/calendar.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/admin/dashboard.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/jquery-jvectormap-1.2.2.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/daterangepicker-bs3.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/admin/nav_header.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/all.css" />
+        <option value="$PROJECT_DIR$/admin/users_students.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/common.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/admin/box.css" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/users_tutors.php" />
+        <option value="$PROJECT_DIR$/admin/users_visitors.php" />
+        <option value="$PROJECT_DIR$/admin/sys_sidebar_nav.php" />
+        <option value="$PROJECT_DIR$/web_header.php" />
+        <option value="$PROJECT_DIR$/web_links.php" />
+        <option value="$PROJECT_DIR$/sys_courses.php" />
+        <option value="$PROJECT_DIR$/user_courses.php" />
+        <option value="$PROJECT_DIR$/user_login.php" />
+        <option value="$PROJECT_DIR$/user_profile.php" />
+        <option value="$PROJECT_DIR$/user_registration.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/footer.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/nav_header.css" />
+        <option value="$PROJECT_DIR$/admin/sys_header.php" />
+        <option value="$PROJECT_DIR$/flexi_course_details.php" />
+        <option value="$PROJECT_DIR$/admin/files/functions/constants.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/box.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/web_sidebar_nav.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/index.css" />
+        <option value="$PROJECT_DIR$/web_footer.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/courses.css" />
+        <option value="$PROJECT_DIR$/flexi_courses.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/client.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1366" />
+    <option name="height" value="740" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553666140639" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/files/lib/css" />
+      <recent name="$PROJECT_DIR$/admin/files/lib/less" />
+      <recent name="$PROJECT_DIR$/admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/files/lib/js" />
+      <recent name="$PROJECT_DIR$/admin/files/lib/css" />
+      <recent name="$PROJECT_DIR$/admin/files/images/temp" />
+      <recent name="$PROJECT_DIR$/admin/files/lib/css/client" />
+      <recent name="$PROJECT_DIR$/admin/files/images/images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="" />
+      <created>1552806999757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552806999757</updated>
+      <workItem from="1552807003188" duration="38641000" />
+      <workItem from="1553172821125" duration="1029000" />
+      <workItem from="1553574513713" duration="9630000" />
+      <workItem from="1553598461615" duration="16961000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="66261000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1600" height="861" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18677792" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.54378533" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Plugins" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/jquery-jvectormap-1.2.2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/jvectormap/jquery-jvectormap-1.2.2.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/daterangepicker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/daterangepicker-bs3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/jquery.sparkline.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/admin/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar04.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/admin/box.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/livestreaming/js/adapter.js" />
+    <entry file="file://$PROJECT_DIR$/admin/files/livestreaming/README.md" />
+    <entry file="file://$PROJECT_DIR$/admin/files/livestreaming/Installation.html" />
+    <entry file="file://$PROJECT_DIR$/admin/users_visitors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/users_tutors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="111" column="26" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/users_students.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="111" column="26" selection-start-line="21" selection-start-column="20" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_header.php" />
+    <entry file="file://$PROJECT_DIR$/admin/sys_links.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="4" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/sys_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="95" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sys_courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_registration.php" />
+    <entry file="file://$PROJECT_DIR$/web_links.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="85" selection-start-line="6" selection-end-line="6" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/images/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/admin/nav_header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/nav_header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/vendors.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/owl.carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2126">
+          <caret line="1659" column="4" selection-start-line="1659" selection-start-column="4" selection-end-line="1659" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/sys_sidebar_nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flexi_course_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/sys_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="2063" column="20" selection-start-line="2063" selection-start-column="15" selection-end-line="2063" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/icheck.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/skins/flat/red.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9435">
+          <caret line="555" column="1" selection-start-line="555" selection-start-column="1" selection-end-line="555" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/box.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/footer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/wow.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="190" column="50" lean-forward="true" selection-start-line="190" selection-start-column="50" selection-end-line="190" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flexi_courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2360">
+          <caret line="257" column="72" selection-start-line="257" selection-start-column="72" selection-end-line="257" selection-end-column="72" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#1633#1639#0#HTML" expanded="true" />
+            <element signature="e#2018#2024#0#HTML" expanded="true" />
+            <element signature="e#2024#2030#0#HTML" expanded="true" />
+            <element signature="e#2417#2423#0#HTML" expanded="true" />
+            <element signature="e#2423#2429#0#HTML" expanded="true" />
+            <element signature="e#2814#2820#0#HTML" expanded="true" />
+            <element signature="e#2820#2826#0#HTML" expanded="true" />
+            <element signature="e#3209#3215#0#HTML" expanded="true" />
+            <element signature="e#3215#3221#0#HTML" expanded="true" />
+            <element signature="e#3606#3612#0#HTML" expanded="true" />
+            <element signature="e#3612#3618#0#HTML" expanded="true" />
+            <element signature="e#4379#4385#0#HTML" expanded="true" />
+            <element signature="e#4764#4770#0#HTML" expanded="true" />
+            <element signature="e#5152#5158#0#HTML" expanded="true" />
+            <element signature="e#5538#5544#0#HTML" expanded="true" />
+            <element signature="e#5923#5929#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/courses.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

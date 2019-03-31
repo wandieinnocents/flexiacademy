@@ -1,0 +1,287 @@
+/* HEADER*/
+#header_logo {
+    background     : black;
+    height         : 40px;
+    line-height    : 40px;
+    vertical-align : center;
+}
+
+#header_logo > a, #header_logo > a:hover {
+    text-decoration : none;
+    color           : white;
+    font-size       : 22px;
+    font-family     : Norasi, "Times New Roman", Casteller, "DejaVu Serif", Serif, serif;
+}
+
+#header_content {
+    background : #3D3D3D;
+}
+
+.navbar-nav a, .navbar-nav a:hover {
+    text-decoration : none;
+}
+
+.navbar-nav li a {
+    margin-left  : 10px;
+    margin-right : 10px;
+}
+
+.navbar-nav .menu > a > i .navbar-nav .menu > a > span {
+    color : white;
+}
+
+.menu_2 > a > span {
+    border-radius  : 50%;
+    color          : rgb(255, 255, 255);
+    font-family    : "Source Sans Pro", sans-serif;
+    font-size      : 10px;
+    font-weight    : 400;
+    height         : 15px;
+    line-height    : 15px;
+    list-style     : none outside none;
+    padding        : 2px;
+    text-align     : center;
+    vertical-align : baseline;
+    white-space    : nowrap;
+    width          : 15px;
+}
+
+.navbar-nav .dropdown-toggle:after {
+    content : none;
+}
+
+.img-circle {
+    border-radius : 50%
+}
+
+.nav_dropdown {
+    width   : 300px;
+    border  : solid 1px #3C8DBC;
+    padding : 0;
+}
+
+#user_header {
+    padding-top    : 5px;
+    padding-bottom : 5px;
+    color          : white;
+    height         : auto;
+    background     : #3C8DBC;
+    text-align     : center;
+}
+
+#user_header > img {
+    border-radius : 50%;
+    z-index       : 5;
+    height        : 90px;
+    width         : 90px;
+    border        : 8px solid rgba(255, 255, 255, 0.2);
+}
+
+#user_header > p {
+    z-index     : 5;
+    color       : #F9F9F9;
+    color       : rgba(255, 255, 255, 0.8);
+    font-size   : 17px;
+    text-shadow : 2px 2px 3px #333333;
+    margin-top  : 10px;
+}
+
+#user_header > p > small {
+    display   : block;
+    font-size : 12px;
+}
+
+#user_footer {
+    margin-top : 30px;
+    padding    : 5px 0;
+    background : rgba(239, 239, 239, 0.51);
+}
+
+#user_footer > div {
+    display : inline-block;
+    width   : 120px;
+}
+
+#user_footer > div:nth-child(2) {
+    margin-left : 50px;
+}
+
+#user_footer a {
+    display    : block;
+    color      : rgba(255, 255, 255, 1);
+    background : #3C8DBC;
+    border     : solid 2px transparent;
+}
+
+#user_footer a:hover {
+    background : rgba(255, 255, 255, 1);
+    color      : #3C8DBC;
+    border     : solid 2px #3C8DBC;
+}
+
+/*SIDE BAR*/
+#side_navbar {
+    background    : #111111;
+    margin-bottom : 5px;
+    height        : auto;
+    min-height    : calc(100vh - 45px);
+}
+
+#user_panel {
+    padding : 10px;
+}
+
+#side_navbar > #user_panel:before, #side_navbar > #user_panel:after {
+    display : table;
+    content : " ";
+}
+
+#side_navbar > #user_panel:after {
+    clear : both;
+}
+
+#side_navbar > #user_panel > .image > img {
+    width  : 45px;
+    height : 45px;
+}
+
+#side_navbar > #user_panel > .info {
+    font-weight : 600;
+    padding     : 5px 5px 5px 15px;
+    font-size   : 14px;
+    line-height : 1;
+}
+
+#side_navbar > #user_panel > .info > p {
+    margin-bottom : 9px;
+    color         : #FFFFFF;
+}
+
+#side_navbar > #user_panel > .info > a {
+    text-decoration : none;
+    padding-right   : 5px;
+    margin-top      : 3px;
+    font-size       : 11px;
+    font-weight     : normal;
+}
+
+#side_navbar > #user_panel > .info > a > .fa, #side_navbar > #user_panel > .info > a > .ion, #side_navbar > #user_panel > .info > a > .glyphicon {
+    margin-right : 3px;
+}
+
+#side_navbar #sidebar_form input:focus {
+    -webkit-box-shadow : none;
+    -moz-box-shadow    : none;
+    box-shadow         : none;
+    border-color       : transparent !important;
+}
+
+#side_navbar #sidebar_menu {
+    list-style : none;
+    margin     : 20px 0 0 0;
+    padding    : 0;
+    text-align : left;
+}
+
+#side_navbar #sidebar_menu > li {
+    padding : 0;
+    margin  : 0 0 4px;
+    border  : solid 1px #3D3D3D;
+}
+
+#side_navbar #sidebar_menu > li.active, #side_navbar #sidebar_menu > li :hover {
+    background : #3D3D3D;
+}
+
+#side_navbar #sidebar_menu > li > a {
+    padding : 12px 5px 12px 15px;
+    display : block;
+}
+
+#side_navbar #sidebar_menu > li > a {
+    color           : white;
+    text-decoration : none;
+}
+
+#side_navbar #sidebar_menu > li > a > .fas {
+    width        : 20px;
+    color        : white;
+    margin-right : 5px;
+}
+
+#side_navbar #sidebar_menu > li > a > span {
+    font-size : 13px;
+}
+
+#side_navbar #sidebar_menu > li > a > small {
+    float         : right;
+    min-width     : 50px;
+    border-radius : 5px;
+}
+
+
+/*bread crumb data*/
+#content_data {
+    min-height : calc(100vh - 50px);
+    background : #EBEBEB;
+    border-top : solid 1px white;
+}
+
+#content_data > .section_header {
+    position : relative;
+    padding  : 15px 15px 10px 20px;
+}
+
+#content_data > .section_header > h1 {
+    margin    : 0;
+    font-size : 24px;
+}
+
+#content_data > .section_header > h1 > small {
+    font-size    : 15px;
+    display      : inline-block;
+    padding-left : 4px;
+    font-weight  : 300;
+    color        : #B0B0B0;
+}
+
+#content_data > .section_header > .breadcrumb {
+    float                 : right;
+    background            : transparent;
+    margin-top            : 0;
+    margin-bottom         : 0;
+    font-size             : 12px;
+    padding               : 7px 5px;
+    position              : absolute;
+    top                   : 15px;
+    right                 : 10px;
+    -webkit-border-radius : 2px;
+    -moz-border-radius    : 2px;
+    border-radius         : 2px;
+}
+
+#content_data > .section_header > .breadcrumb > li > a {
+    color           : #444444;
+    text-decoration : none;
+}
+
+#content_data > .section_header > .breadcrumb > li > a > .fas {
+    margin-right : 5px;
+}
+
+#content_data > .section_header > .breadcrumb > li + li:before {
+    content : '>\00a0';
+}
+
+@media screen and (max-width : 767px) {
+    #content_data > .section_header > .breadcrumb {
+        position   : relative;
+        margin-top : 5px;
+        top        : 0;
+        right      : 0;
+        float      : none;
+        background : #EFEFEF;
+    }
+}
+
+

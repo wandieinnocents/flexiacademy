@@ -1,0 +1,292 @@
+@import "bootstrap.css";
+@import "all.css";
+@import "admin/nav_header.css";
+@import "admin/box.css";
+
+:root {
+    --color_main : #3C8DBC;
+}
+
+/*colors*/
+/* Background colors */
+.bg-red, .bg-yellow, .bg-aqua, .bg-blue, .bg-light-blue, .bg-green, .bg-navy, .bg-teal, .bg-olive, .bg-lime, .bg-orange, .bg-fuchsia, .bg-purple, .bg-maroon, .bg-black {
+    color : #F9F9F9 !important;
+}
+
+.bg-gray {
+    background-color : #EAEAEC !important;
+}
+
+.bg-black {
+    background-color : #222222 !important;
+}
+
+.bg-red {
+    background-color : #F56954 !important;
+}
+
+.bg-yellow {
+    background-color : #F39C12 !important;
+}
+
+.bg-aqua {
+    background-color : #00C0EF !important;
+}
+
+.bg-blue {
+    background-color : #0073B7 !important;
+}
+
+.bg-light-blue {
+    background-color : #3C8DBC !important;
+}
+
+.bg-green {
+    background-color : #00A65A !important;
+}
+
+.bg-navy {
+    background-color : #001F3F !important;
+}
+
+.bg-teal {
+    background-color : #39CCCC !important;
+}
+
+.bg-olive {
+    background-color : #3D9970 !important;
+}
+
+.bg-lime {
+    background-color : #01FF70 !important;
+}
+
+.bg-orange {
+    background-color : #FF851B !important;
+}
+
+.bg-fuchsia {
+    background-color : #F012BE !important;
+}
+
+.bg-purple {
+    background-color : #932AB6 !important;
+}
+
+.bg-maroon {
+    background-color : #85144B !important;
+}
+
+/* Text colors */
+.text-red {
+    color : #F56954 !important;
+}
+
+.text-yellow {
+    color : #F39C12 !important;
+}
+
+.text-aqua {
+    color : #00C0EF !important;
+}
+
+.text-blue {
+    color : #0073B7 !important;
+}
+
+.text-light-blue {
+    color : #3C8DBC !important;
+}
+
+.text-green {
+    color : #00A65A !important;
+}
+
+.text-navy {
+    color : #001F3F !important;
+}
+
+.text-teal {
+    color : #39CCCC !important;
+}
+
+.text-olive {
+    color : #3D9970 !important;
+}
+
+.text-lime {
+    color : #01FF70 !important;
+}
+
+.text-orange {
+    color : #FF851B !important;
+}
+
+.text-fuchsia {
+    color : #F012BE !important;
+}
+
+.text-purple {
+    color : #932AB6 !important;
+}
+
+.text-maroon {
+    color : #85144B !important;
+}
+
+
+/*LABELS*/
+/*from bootstrap 3*/
+.label {
+    display        : inline;
+    padding        : .2em .6em .3em;
+    font-size      : 75%;
+    font-weight    : bold;
+    line-height    : 1;
+    color          : #FFFFFF;
+    text-align     : center;
+    white-space    : nowrap;
+    vertical-align : baseline;
+    border-radius  : .25em;
+}
+
+.label[href]:hover,
+.label[href]:focus {
+    color           : #FFFFFF;
+    text-decoration : none;
+    cursor          : pointer;
+}
+
+.label:empty {
+    display : none;
+}
+
+.btn .label {
+    position : relative;
+    top      : -1px;
+}
+
+.label-default {
+    background-color : #999999;
+}
+
+.label-default[href]:hover, .label-default[href]:focus {
+    background-color : #808080;
+}
+
+.label-primary {
+    background-color : #428BCA;
+}
+
+.label-primary[href]:hover, .label-primary[href]:focus {
+    background-color : #3071A9;
+}
+
+.label-success {
+    background-color : #5CB85C;
+}
+
+.label-success[href]:hover, .label-success[href]:focus {
+    background-color : #449D44;
+}
+
+.label-info {
+    background-color : #5BC0DE;
+}
+
+.label-info[href]:hover, .label-info[href]:focus {
+    background-color : #31B0D5;
+}
+
+.label-warning {
+    background-color : #F0AD4E;
+}
+
+.label-warning[href]:hover, .label-warning[href]:focus {
+    background-color : #EC971F;
+}
+
+.label-danger {
+    background-color : #D9534F;
+}
+
+.label-danger[href]:hover, .label-danger[href]:focus {
+    background-color : #C9302C;
+}
+
+.content_column {
+    height : calc(100vh - 45px);
+}
+
+
+.table .info_header {
+    width : 180px;
+}
+
+.table .table_info {
+
+}
+
+
+.info_user_header {
+    padding-top    : 5px;
+    padding-bottom : 5px;
+    color          : white;
+    height         : auto;
+    background     : #3C8DBC;
+    text-align     : center;
+}
+
+.info_user_header > img {
+    border-radius : 50%;
+    z-index       : 5;
+    height        : 90px;
+    width         : 90px;
+    border        : 8px solid rgba(255, 255, 255, 0.2);
+}
+
+.info_user_header > p {
+    z-index     : 5;
+    color       : #F9F9F9;
+    color       : rgba(255, 255, 255, 0.8);
+    font-size   : 17px;
+    text-shadow : 2px 2px 3px #333333;
+    margin-top  : 10px;
+}
+
+.info_user_header > p > small {
+    display   : block;
+    font-size : 12px;
+}
+
+.info_table {
+    font-family : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.info_table tr, .info_table tr > td {
+    height         : 35px;
+    line-height    : 35px;
+    vertical-align : middle;
+}
+
+.info_table > tbody > tr > td {
+    border : 1px solid transparent;
+}
+
+.info_table tr:nth-child(2n - 1) {
+    background : transparent;
+    color      : #3C8DBC;
+}
+
+.info_table tr:nth-child(2n) {
+    background : #3C8DBC;
+    color      : white;
+}
+
+.info_table .info_header {
+    font-weight : 800;
+}
+
+.info_table .table_info {
+
+}
