@@ -6,9 +6,10 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'>
-        <title>FlexiStudy | My Profile</title>
+        <title>FlexiStudy | Settings</title>
 
         <?php require_once 'web_links.php' ?>
+        <link href='admin/files/lib/css/client/client_courses.css' rel='stylesheet' type='text/css'/>
     </head>
     <body>
         <div class='container-fluid p-0'>

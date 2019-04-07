@@ -46,29 +46,22 @@
                 </a>
             </li>
 
-            <li class='<?php echo $name == 'user_profile' ? 'active' : '' ?>'>
-                <a href='user_profile.php'>
-                    <i class='fas fa-user-friends'></i>
-                    <span>My Profile</span>
-                </a>
-            </li>
-
-            <li class='<?php echo $name == 'user_profile' ? 'active' : '' ?>'>
-                <a href='user_profile.php'>
+            <li class='<?php echo $name == 'user_settings' ? 'active' : '' ?>'>
+                <a href='user_settings.php'>
                     <i class='fas fa-cogs'></i>
                     <span>Settings</span>
                 </a>
             </li>
 
-            <li class='<?php echo $name == 'user_profile' ? 'active' : '' ?>'>
-                <a href='user_profile.php'>
+            <li class='<?php echo $name == 'user_help' ? 'active' : '' ?>'>
+                <a href='user_help.php'>
                     <i class='fas fa-info'></i>
                     <span>Help Center</span>
                 </a>
             </li>
 
-            <li class='<?php echo $name == 'user_login' ? 'active' : '' ?>'>
-                <a href='user_login.php'>
+            <li>
+                <a href='javascript:void()' data-toggle="modal" data-target="#login_modal">
                     <i class='fas fa-sign-in-alt'></i>
                     <span>Login Account</span>
                 </a>

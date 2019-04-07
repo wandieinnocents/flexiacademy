@@ -1,12 +1,12 @@
 <?php
-    $name = 'user_login';
+    $name = 'user_help';
 ?>
 
 <!DOCTYPE html>
 <html lang='en'>
     <head>
         <meta charset='UTF-8'>
-        <title>FlexiStudy | Login</title>
+        <title>FlexiStudy | Help Center</title>
 
         <?php require_once 'web_links.php' ?>
     </head>

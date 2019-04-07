@@ -2,9 +2,32 @@
 @import "all.css";
 @import "admin/nav_header.css";
 @import "admin/box.css";
+@import "elegant_fonts.css";
 
 :root {
-    --color_main : #3C8DBC;
+    --color_main     : #3C8DBC;
+    --progress_color : #666666;
+    --border-color   : #EDEDED;
+
+    background       : #F8F8F8;
+    font-size        : 0.875rem;
+    line-height      : 1.6;
+    font-family      : "Poppins", Helvetica, sans-serif;
+    color            : #555555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color : #333333;
+}
+
+ul, ol {
+    list-style : none;
+    margin     : 0 0 25px 0;
+    padding    : 0;
+}
+
+textarea {
+    resize : none;
 }
 
 /*colors*/
@@ -289,4 +312,88 @@
 
 .info_table .table_info {
 
+}
+
+
+ul.bullets {
+    line-height   : 1.8;
+    margin-bottom : 30px;
+    list-style    : none;
+}
+
+ul.bullets li {
+    position     : relative;
+    padding-left : 20px;
+}
+
+ul.bullets li:before {
+    font-style  : normal;
+    font-weight : normal;
+    font-family : 'ElegantIcons', serif;
+    font-size   : 90%;
+    content     : "\5c";
+    color       : #CCCCCC;
+    position    : absolute;
+    left        : 0;
+    top         : 0;
+}
+
+ul.list_ok {
+    list-style : none;
+    margin     : 25px 0 30px 0;
+    padding    : 0;
+}
+
+ul.list_ok li {
+    position      : relative;
+    padding-left  : 45px;
+    margin-bottom : 20px;
+}
+
+ul.list_ok li:before {
+    font-family : 'ElegantIcons', serif;
+    content     : "\52";
+    position    : absolute;
+    left        : 0;
+    top         : -10px;
+    font-size   : 200%;
+    color       : #8DC63F;
+}
+
+ul.list_ok li h6 {
+    font-weight : 700;
+}
+
+hr {
+    margin       : 30px 0 30px 0;
+    border-color : #EDEDED;
+}
+
+.btn {
+    width         : 100%;
+    border        : solid 2px transparent;
+    font-weight   : 800;
+    border-radius : 5px;
+}
+
+.btn.solid {
+    background : var(--color_main);
+    color      : white;
+}
+
+.btn.solid:hover {
+    background   : transparent;
+    color        : var(--color_main);
+    border-color : var(--color_main);
+}
+
+.btn.empty {
+    color      : var(--color_main);
+    background : transparent;
+}
+
+.btn.empty:hover {
+    color        : white;
+    background   : var(--color_main);
+    border-color : var(--color_main);
 }

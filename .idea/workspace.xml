@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="" />
+    <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/temp/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/temp/logo_2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/css/client/client_courses.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/css/client/course_details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/css/elegant_fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/fonts/ElegantIcons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/fonts/ElegantIcons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/fonts/ElegantIcons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/fonts/ElegantIcons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/lib/js/theia-sticky-sidebar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/lib/css/client/client.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/lib/css/client/client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/lib/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/lib/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flexi_course_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/flexi_course_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_courses.php" beforeDir="false" afterPath="$PROJECT_DIR$/user_courses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/user_help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/user_settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/web_footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/web_sidebar.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,19 +33,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_sidebar.php">
+        <entry file="file://$PROJECT_DIR$/flexi_course_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="425">
+              <caret line="241" column="58" lean-forward="true" selection-start-line="238" selection-start-column="51" selection-end-line="241" selection-end-column="58" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,26 +48,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/lib/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/index.css">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client_courses.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14">
-              <caret line="190" column="50" lean-forward="true" selection-start-line="190" selection-start-column="50" selection-end-line="190" selection-end-column="50" />
+            <state relative-caret-position="626">
+              <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -59,63 +66,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flexi_courses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2360">
-              <caret line="257" column="72" selection-start-line="257" selection-start-column="72" selection-end-line="257" selection-end-column="72" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#1633#1639#0#HTML" expanded="true" />
-                <element signature="e#2018#2024#0#HTML" expanded="true" />
-                <element signature="e#2024#2030#0#HTML" expanded="true" />
-                <element signature="e#2417#2423#0#HTML" expanded="true" />
-                <element signature="e#2423#2429#0#HTML" expanded="true" />
-                <element signature="e#2814#2820#0#HTML" expanded="true" />
-                <element signature="e#2820#2826#0#HTML" expanded="true" />
-                <element signature="e#3209#3215#0#HTML" expanded="true" />
-                <element signature="e#3215#3221#0#HTML" expanded="true" />
-                <element signature="e#3606#3612#0#HTML" expanded="true" />
-                <element signature="e#3612#3618#0#HTML" expanded="true" />
-                <element signature="e#4379#4385#0#HTML" expanded="true" />
-                <element signature="e#4764#4770#0#HTML" expanded="true" />
-                <element signature="e#5152#5158#0#HTML" expanded="true" />
-                <element signature="e#5538#5544#0#HTML" expanded="true" />
-                <element signature="e#5923#5929#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="445">
+              <caret line="212" column="38" lean-forward="true" selection-start-line="189" selection-start-column="31" selection-end-line="212" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_footer.php">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+            <state relative-caret-position="220">
+              <caret line="287" column="1" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/footer.css">
+        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/course_details.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
+            <state relative-caret-position="227">
+              <caret line="174" selection-start-line="174" selection-end-line="180" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/courses.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user_courses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flexi_course_details.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="99">
+              <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -176,12 +155,12 @@
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/sys_footer.php" />
-        <option value="$PROJECT_DIR$/admin/test.html" />
-        <option value="$PROJECT_DIR$/admin/sys_links.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/admin/navbar.css" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/admin/navbar.less" />
         <option value="$PROJECT_DIR$/admin/files/lib/less/navbar.less" />
@@ -201,7 +180,6 @@
         <option value="$PROJECT_DIR$/admin/files/lib/css/admin/nav_header.css" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/all.css" />
         <option value="$PROJECT_DIR$/admin/users_students.php" />
-        <option value="$PROJECT_DIR$/admin/files/lib/css/common.css" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/admin/box.css" />
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/users_tutors.php" />
@@ -210,73 +188,82 @@
         <option value="$PROJECT_DIR$/web_header.php" />
         <option value="$PROJECT_DIR$/web_links.php" />
         <option value="$PROJECT_DIR$/sys_courses.php" />
-        <option value="$PROJECT_DIR$/user_courses.php" />
         <option value="$PROJECT_DIR$/user_login.php" />
-        <option value="$PROJECT_DIR$/user_profile.php" />
         <option value="$PROJECT_DIR$/user_registration.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/footer.css" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/nav_header.css" />
         <option value="$PROJECT_DIR$/admin/sys_header.php" />
-        <option value="$PROJECT_DIR$/flexi_course_details.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/constants.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/box.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/web_sidebar_nav.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/index.css" />
-        <option value="$PROJECT_DIR$/web_footer.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/courses.css" />
         <option value="$PROJECT_DIR$/flexi_courses.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/elegant_fonts.css" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/common.css" />
+        <option value="$PROJECT_DIR$/flexi_course_details.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/course_details.css" />
+        <option value="$PROJECT_DIR$/web_footer.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/client.css" />
+        <option value="$PROJECT_DIR$/user_profile.php" />
+        <option value="$PROJECT_DIR$/user_help.php" />
+        <option value="$PROJECT_DIR$/web_sidebar.php" />
+        <option value="$PROJECT_DIR$/user_settings.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/css/client/client_courses.css" />
+        <option value="$PROJECT_DIR$/user_courses.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="740" />
+    <option name="x" value="135" />
+    <option name="y" value="52" />
+    <option name="width" value="1024" />
+    <option name="height" value="686" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="flexi_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexi_study" type="462c0819:PsiDirectoryNode" />
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
@@ -293,7 +280,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553666140639" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554655823982" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -310,11 +297,11 @@
       <recent name="$PROJECT_DIR$/admin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/admin/files/images/temp" />
       <recent name="$PROJECT_DIR$/admin/files/lib/js" />
       <recent name="$PROJECT_DIR$/admin/files/lib/css" />
-      <recent name="$PROJECT_DIR$/admin/files/images/temp" />
-      <recent name="$PROJECT_DIR$/admin/files/lib/css/client" />
-      <recent name="$PROJECT_DIR$/admin/files/images/images" />
+      <recent name="$PROJECT_DIR$/admin/files/lib/fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,11 +330,14 @@
       <workItem from="1553172821125" duration="1029000" />
       <workItem from="1553574513713" duration="9630000" />
       <workItem from="1553598461615" duration="16961000" />
+      <workItem from="1554382660327" duration="339000" />
+      <workItem from="1554391848045" duration="1193000" />
+      <workItem from="1554629786186" duration="20113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66261000" />
+    <option name="totallyTimeSpent" value="87906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="861" extended-state="6" />
@@ -389,36 +379,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/jquery-jvectormap-1.2.2.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/jvectormap/jquery-jvectormap-1.2.2.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/daterangepicker.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/daterangepicker-bs3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/jquery.sparkline.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/admin/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar04.png">
@@ -491,31 +452,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sys_courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sys_courses.php" />
     <entry file="file://$PROJECT_DIR$/user_login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -566,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flexi_course_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/sys_header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -600,98 +534,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9435">
-          <caret line="555" column="1" selection-start-line="555" selection-start-column="1" selection-end-line="555" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/box.css">
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/box.css" />
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/wow.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_sidebar.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="55" />
+        <state relative-caret-position="626">
+          <caret line="190" column="50" selection-start-line="190" selection-start-column="50" selection-end-line="190" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
+        <state relative-caret-position="626">
           <caret line="242" column="1" selection-start-line="242" selection-start-column="1" selection-end-line="242" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="190" column="50" lean-forward="true" selection-start-line="190" selection-start-column="50" selection-end-line="190" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flexi_courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2360">
-          <caret line="257" column="72" selection-start-line="257" selection-start-column="72" selection-end-line="257" selection-end-column="72" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#1633#1639#0#HTML" expanded="true" />
-            <element signature="e#2018#2024#0#HTML" expanded="true" />
-            <element signature="e#2024#2030#0#HTML" expanded="true" />
-            <element signature="e#2417#2423#0#HTML" expanded="true" />
-            <element signature="e#2423#2429#0#HTML" expanded="true" />
-            <element signature="e#2814#2820#0#HTML" expanded="true" />
-            <element signature="e#2820#2826#0#HTML" expanded="true" />
-            <element signature="e#3209#3215#0#HTML" expanded="true" />
-            <element signature="e#3215#3221#0#HTML" expanded="true" />
-            <element signature="e#3606#3612#0#HTML" expanded="true" />
-            <element signature="e#3612#3618#0#HTML" expanded="true" />
-            <element signature="e#4379#4385#0#HTML" expanded="true" />
-            <element signature="e#4764#4770#0#HTML" expanded="true" />
-            <element signature="e#5152#5158#0#HTML" expanded="true" />
-            <element signature="e#5538#5544#0#HTML" expanded="true" />
-            <element signature="e#5923#5929#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/courses.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
+        <state relative-caret-position="626">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/elegant_fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/avatar2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/theia-sticky-sidebar.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/course_list.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="2649" column="13" selection-start-line="2649" selection-start-column="13" selection-end-line="2649" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_help.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="59" column="20" lean-forward="true" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="103" column="73" selection-start-line="103" selection-start-column="73" selection-end-line="103" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="101" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/course_details.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="174" selection-start-line="174" selection-end-line="180" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flexi_courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="212" column="38" lean-forward="true" selection-start-line="189" selection-start-column="31" selection-end-line="212" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="220">
+          <caret line="287" column="1" selection-start-line="287" selection-start-column="1" selection-end-line="287" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client_courses.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flexi_course_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="241" column="58" lean-forward="true" selection-start-line="238" selection-start-column="51" selection-end-line="241" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#0;n#section#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
         </state>
       </provider>
     </entry>

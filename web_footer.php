@@ -68,6 +68,84 @@
     </div>
 </footer>
 
+<!-- The Modal -->
+<div class="modal" id="login_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <figure>
+                    <img src="admin/files/images/temp/logo.png" alt="">
+                </figure>
+                <form id='registration_form' class='d-none'>
+                    <div class='form-row mx-0 mb-3'>
+                        <input class='form-control form-control-lg' type='text' placeholder='Enter first name' autocomplete='off'>
+                    </div>
+                    <div class='form-row mx-0 mb-3'>
+                        <input class='form-control form-control-lg' type='text' placeholder='Enter last name' autocomplete='off'>
+                    </div>
+                    <div class='form-row mx-0 mb-3'>
+                        <input class='form-control form-control-lg' type='date' placeholder='Date of birth' autocomplete='off'>
+                    </div>
+                    <div class='form-row mx-0 mb-3'>
+                        <input class='form-control form-control-lg' type='email' placeholder='Enter email address' autocomplete='off'>
+                    </div>
+                    <div class='form-row mx-0 mb-3'>
+                        <input class='form-control form-control-lg' type='tel' placeholder='Enter mobile contact' autocomplete='off'>
+                    </div>
+                    <div class='form-row mx-0 mb-3'>
+                        <input class='form-control form-control-lg' type='password' placeholder='Enter login password' autocomplete='off'>
+                    </div>
+                    <div class='form-row mx-0 mb-5'>
+                        <input class='form-control form-control-lg' type='password' placeholder='Confirm login password' autocomplete='off'>
+                    </div>
+
+                    <div class='form-row mx-0'>
+                        <div class='col-6 offset-3 p-0'>
+                            <button class='btn solid'>Create FlexiStudy account</button>
+                        </div>
+                    </div>
+                    <div class='text-center mt-3'>
+                        Already have a FlexiStudy account? <strong><span id='button_login'>Login!</span></strong>
+                    </div>
+                </form>
+                <form id='login_form'>
+                    <div class='access_social'>
+                        <a href='#' class='social_bt facebook'>Login with Facebook</a>
+                        <a href='#' class='social_bt google'>Login with Google</a>
+                        <a href='#' class='social_bt linkedin'>Login with Linkedin</a>
+                    </div>
+
+                    <div class='divider'><span>Or</span></div>
+
+                    <div class='form-row mx-0 mb-5'>
+                        <input class='form-control form-control-lg' type='email' placeholder='Login email address' autocomplete='off'>
+                    </div>
+
+                    <div class='form-row mx-0 mb-5'>
+                        <input class='form-control form-control-lg' type='password' placeholder='Login password' autocomplete='off'>
+                    </div>
+
+                    <div class='form-group'>
+                        <div class='form-row mx-0'>
+                            <div class='col-6 offset-3 p-0'>
+                                <button class='btn solid'>Login to FlexiStudy</button>
+                            </div>
+                        </div>
+                        <div class='text-center mt-3'>
+                            New to FlexiStudy? <strong><span id='button_register'>Create Account</span></strong>
+                        </div>
+                    </div>
+                </form>
+                <div class='copy mt-4'>© <?php echo date('Y') ?> FlexiStudy</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" style='width: 100px'>Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -107,5 +185,15 @@
             }
         );
         wow.init();
+
+        $("#button_login").click(function () {
+            $("#login_form").removeClass("d-none");
+            $("#registration_form").addClass("d-none");
+        });
+
+        $("#button_register").click(function () {
+            $("#login_form").addClass("d-none");
+            $("#registration_form").removeClass("d-none");
+        });
     });
 </script>
