@@ -52,17 +52,17 @@
                                 <li>
                                     <i class="fas fa-graduation-cap"></i>
                                     <h4>+200 courses</h4>
-                                    <span>Explore a variety of fresh topics</span>
+                                    <span>Explore a variety of topics</span>
                                 </li>
                                 <li>
-                                    <i class="fas fa-chalkboard-teacher"></i>
-                                    <h4>Expert teachers</h4>
-                                    <span>Find the right instructor for you</span>
+                                    <i class="fas fa-book-open"></i>
+                                    <h4>STUDY ONLINE</h4>
+                                    <span>With internet, you win</span>
                                 </li>
                                 <li>
-                                    <i class="fas fa-hand-pointer"></i>
-                                    <h4>Focus on target</h4>
-                                    <span>Increase your personal expertise</span>
+                                    <i class="fas fa-laptop"></i>
+                                    <h4>DISTANT ACCESS</h4>
+                                    <span>No worry for location today</span>
                                 </li>
                             </ul>
                         </div>
