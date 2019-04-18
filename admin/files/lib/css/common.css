@@ -5,13 +5,13 @@
 @import "elegant_fonts.css";
 
 :root {
-    --color_main     : #0B3ABC;
-    --main_color     : #0B3ABC;
+    --color_main     : #0A2C90;
+    --main_color     : #0A2C90;
 
     --progress_color : #666666;
     --border-color   : #EDEDED;
 
-    --footer         : #0B3ABC;
+    --footer         : #0A2C90;
     /*  --footer         : #3D3D3D;*/
 
     background       : #F8F8F8;

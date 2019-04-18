@@ -19,18 +19,14 @@
             <div class='row mx-0'>
                 <div class='col-12  p-0'>
                     <div id='header_image'>
+                        <ul>
+                            <li><a href='index.php'>HOME</a></li>
+                            <li><a href='#'>ABOUT</a></li>
+                            <li><a href='flexi_courses.php'>COURSES</a></li>
+                            <li><a href='#'>NEWS</a></li>
+                            <li><a href='user_settings.php'>ACCOUNT</a></li>
+                        </ul>
 
-                        <div id='header_nav'>
-                            <ul>
-                                <li><a href='index.php'>HOME</a></li>
-                                <li><a href='#'>ABOUT</a></li>
-                                <li><a href='flexi_courses.php'>COURSES</a></li>
-                                <li><a href='#'>NEWS</a></li>
-                                <li><a href='user_settings.php'>ACCOUNT</a></li>
-                            </ul>
-                        </div>
-
-                        <img src='admin/files/images/images/flexi_image.jpg' alt=''>
                         <div>
                             <div id='div_1'>
                                 <div>STUDY ONLINE</div>
@@ -76,8 +72,8 @@
             <div class='row mx-0 mt-5'>
                 <div class='col-12 px-0 main_title_2'>
                     <span><em></em></span>
-                    <h2>Udema Popular Courses</h2>
-                    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+                    <h2>FlexiStudy Popular Courses</h2>
+                    <p>We have many course for you, choose your convinient ones.</p>
                 </div>
 
                 <div class='col-12 px-1'>
