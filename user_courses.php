@@ -77,7 +77,10 @@ EOT;
                                             <small>Category</small>
                                             <h3>Ei has exerci graecis</h3>
                                             <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
+                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i
+                                                        class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i>
+                                                <small>(145)</small>
+                                            </div>
                                         </div>
                                         <ul>
                                             <li><i class="fas fa-clock"></i> 1h 30min</li>
@@ -102,7 +105,10 @@ EOT;
                                             <small>Category</small>
                                             <h3>Ei has exerci graecis</h3>
                                             <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
+                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i
+                                                        class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i>
+                                                <small>(145)</small>
+                                            </div>
                                         </div>
                                         <ul>
                                             <li><i class="fas fa-clock"></i> 1h 30min</li>

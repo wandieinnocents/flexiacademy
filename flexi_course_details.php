@@ -413,10 +413,6 @@
         </div>
 
         <?php require_once 'web_footer.php' ?>
-
-        <!-- popper -->
-        <script src='admin/files/lib/js/theia-sticky-sidebar.min.js'></script>
-
         <script>
             $(document).ready(function () {
                 // Sticky sidebar

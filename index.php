@@ -1,6 +1,8 @@
 <?php
     $name = 'index';
     require_once 'admin/files/functions/constants.php';
+
+    $connection = connect_database();
 ?>
 
 <!DOCTYPE html>
@@ -14,17 +16,30 @@
     </head>
     <body>
         <div class='container-fluid p-0'>
-            <div class='row m-0'>
-                <div class='col-12 col-sm-4 col-md-3 col-lg-2 p-1 p-md-3' id='side_navbar'>
-                    <?php require_once 'web_sidebar.php' ?>
-                </div>
-
-                <div class='col-12 col-sm-8 col-md-7 col-lg-10 p-0'>
+            <div class='row mx-0'>
+                <div class='col-12  p-0'>
                     <div id='header_image'>
-                        <img src='admin/files/images/temp/fantasy.jpg' alt=''>
+
+                        <div id='header_nav'>
+                            <ul>
+                                <li><a href='index.php'>HOME</a></li>
+                                <li><a href='#'>ABOUT</a></li>
+                                <li><a href='flexi_courses.php'>COURSES</a></li>
+                                <li><a href='#'>NEWS</a></li>
+                                <li><a href='user_settings.php'>ACCOUNT</a></li>
+                            </ul>
+                        </div>
+
+                        <img src='admin/files/images/images/flexi_image.jpg' alt=''>
                         <div>
-                            <img src='admin/files/images/temp/open_book.jpg' alt=''>
-                            <div>
+                            <div id='div_1'>
+                                <div>STUDY ONLINE</div>
+                                <div>Enjoy today and get the best online courses</div>
+                                <div>
+                                    <span data-toggle="modal" data-target="#login_modal">GET STARTED</span>
+                                </div>
+                            </div>
+                            <div id='div_2'>
                                 <div>FLEXI STUDY</div>
                                 <div>Anywhere Anytime</div>
                             </div>

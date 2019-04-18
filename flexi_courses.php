@@ -113,7 +113,7 @@
 
                         <div class='col-12 col-sm-6 col-md-8 col-lg-9 p-2'>
                             <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-md-6 col-lg-4 d-none">
                                     <div class="box_grid wow">
                                         <figure class="block-reveal">
                                             <div class="block_horizontal"></div>
@@ -137,130 +137,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- /box_grid -->
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="box_grid wow">
-                                        <figure class="block-reveal">
-                                            <div class="block_horizontal"></div>
-                                            <a href="#" class="wish_bt"></a>
-                                            <a href="flexi_course_details.php?course=2">
-                                                <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt=""></a>
-                                            <div class="price">$39</div>
-                                            <div class="preview"><span>Preview course</span></div>
-                                        </figure>
-                                        <div class="wrapper">
-                                            <small>Category</small>
-                                            <h3>At deseruisse scriptorem</h3>
-                                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                            <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                            <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- /box_grid -->
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="box_grid wow">
-                                        <figure class="block-reveal">
-                                            <div class="block_horizontal"></div>
-                                            <a href="#" class="wish_bt"></a>
-                                            <a href="flexi_course_details.php?course=2">
-                                                <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="price">$40</div>
-                                            <div class="preview"><span>Preview course</span></div>
-                                        </figure>
-                                        <div class="wrapper">
-                                            <small>Category</small>
-                                            <h3>Ea vel semper quaerendum</h3>
-                                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                            <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                            <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- /box_grid -->
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="box_grid wow">
-                                        <figure class="block-reveal">
-                                            <div class="block_horizontal"></div>
-                                            <a href="#" class="wish_bt"></a>
-                                            <a href="flexi_course_details.php?course=2">
-                                                <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="price">$65</div>
-                                            <div class="preview"><span>Preview course</span></div>
-                                        </figure>
-                                        <div class="wrapper">
-                                            <small>Category</small>
-                                            <h3>Ei has exerci graecis</h3>
-                                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                            <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                            <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- /box_grid -->
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="box_grid wow">
-                                        <figure class="block-reveal">
-                                            <div class="block_horizontal"></div>
-                                            <a href="#" class="wish_bt"></a>
-                                            <a href="flexi_course_details.php?course=2">
-                                                <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="price">$35</div>
-                                            <div class="preview"><span>Preview course</span></div>
-                                        </figure>
-                                        <div class="wrapper">
-                                            <small>Category</small>
-                                            <h3>Decore tractatos</h3>
-                                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                            <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                            <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- /box_grid -->
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="box_grid wow">
-                                        <figure class="block-reveal">
-                                            <div class="block_horizontal"></div>
-                                            <a href="#" class="wish_bt"></a>
-                                            <a href="flexi_course_details.php?course=2">
-                                                <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="price">$47</div>
-                                            <div class="preview"><span>Preview course</span></div>
-                                        </figure>
-                                        <div class="wrapper">
-                                            <small>Category</small>
-                                            <h3>Eam id legimus torquatos</h3>
-                                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                            <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                            <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+
+                                <div class='col-12 p-1 no_list'>No courses to display</div>
+
                             </div>
                         </div>
                     </div>
