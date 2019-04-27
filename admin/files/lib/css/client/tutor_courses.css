@@ -1,0 +1,96 @@
+#content_container {
+    min-height : 90vh;
+}
+
+#create_course {
+    height         : 40px;
+    width          : 40px;
+    background     : var(--main_color);
+    border-radius  : 50%;
+    position       : fixed;
+    bottom         : 50px;
+    right          : 50px;
+    border         : solid 3px white;
+    text-align     : center;
+    font-size      : 100%;
+    padding-top    : 1px;
+    color          : white;
+    cursor         : pointer;
+    vertical-align : middle;
+    line-height    : 30px;
+}
+
+#course_creation_modal .modal-body {
+    height : 80vh;
+}
+
+#course_creation_modal .modal-body > div#form_data {
+    height     : calc(100% - 90px);
+    border     : solid 1px lightgrey;
+    overflow-y : auto;
+    padding    : 5px;
+}
+
+#steps {
+    text-align     : center;
+    margin-bottom  : 10px;
+    line-height    : 15px;
+    vertical-align : middle;
+}
+
+#steps > span {
+    background-color : #BBBBBB;
+    display          : inline-block;
+    margin-left      : -4px;
+}
+
+#steps > span.step_pointer {
+    height        : 15px;
+    width         : 15px;
+    border        : none;
+    border-radius : 50%;
+}
+
+#steps > span.step_space {
+    width         : 30px;
+    height        : 5px;
+    margin-bottom : 5px;
+}
+
+#steps > span.step_pointer.finished, #steps > span.step_space.finished {
+    background-color : var(--main_color);
+}
+
+#course_creation_modal .modal-footer > div {
+    width : 100%;
+}
+
+button#btn_back {
+    border-top-left-radius    : 20px;
+    border-bottom-left-radius : 20px;
+}
+
+button#btn_forward {
+    border-top-right-radius    : 20px;
+    border-bottom-right-radius : 20px;
+}
+
+#intro {
+    text-align : center;
+}
+
+#intro > img {
+    margin-bottom : 25px;
+}
+
+.step_tab > h1 {
+    font-size   : 220%;
+    display     : block;
+    width       : 100%;
+    text-align  : center;
+    font-weight : 800;
+}
+
+.step_tab label {
+    font-weight : 700;
+}

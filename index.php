@@ -21,8 +21,10 @@
                     <div id='header_image'>
                         <ul>
                             <li><a href='index.php'>HOME</a></li>
-                            <li><a href='#'>ABOUT</a></li>
                             <li><a href='flexi_courses.php'>COURSES</a></li>
+                            <li><a href='user_courses.php'>MY COURSES</a></li>
+                            <li><a href='tutor_courses.php'>TUTOR COURSES</a></li>
+                            <li><a href='#'>ABOUT</a></li>
                             <li><a href='#'>NEWS</a></li>
                             <li><a href='user_settings.php'>ACCOUNT</a></li>
                         </ul>

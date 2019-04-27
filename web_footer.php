@@ -70,7 +70,6 @@
 
 <?php
     $min_date = (intval(date('Y', time())) - 12) . '-01-01';
-    echo $min_date;
 ?>
 
 <!-- The Modal -->
@@ -252,10 +251,6 @@
             this.email = $("#reg_email_address");
             this.contact = $("#reg_telephone");
 
-            this.provider = new firebase.auth.GoogleAuthProvider();
-
-            this.facebook_provider = new firebase.auth.FacebookAuthProvider();
-
             $("#login_user_now").on("click", function () {
                 parent.login();
             });
@@ -275,69 +270,48 @@
             $("#sign_out_user").on("click", function () {
                 parent.sign_out_user();
             });
+
+            /*   $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+                   alert('Latitude: ' + data.latitude +
+                       '\nLongitude: ' + data.longitude +
+                       '\nCountry: ' + data.address.country);
+               });*/
         }
 
         facebook_log_in() {
-            this.facebook_provider.addScope("user_birthday");
+            const facebook_provider = new firebase.auth.FacebookAuthProvider();
+            facebook_provider.addScope("user_birthday");
+            facebook_provider.setCustomParameters({"display": "popup"});
 
-            this.facebook_provider.setCustomParameters({
-                "display": "popup"
-            });
+            firebase.auth().signInWithPopup(facebook_provider).then(function (result) {
+                // const token = result.credential.accessToken;
+                const user = result.user;
 
-            firebase.auth().signInWithPopup(this.facebook_provider).then(function (result) {
-                // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-                const token = result.credential.accessToken;
-                // The signed-in user info.
-                const response = result.user;
+                console.log(user.providerData[0].displayName)
+                console.log(user.providerData[0].photoURL)
+                console.log(user.providerData[0].email)
+                console.log(user.providerData[0].providerId)
 
-                console.log(response);
-
-                console.log(response.email);
-                console.log(response.name);
-                console.log(response.gender);
-                console.log(response.birthday);
-                console.log(response.hometown);
-                console.log(response.education);
-                console.log(response.website);
-                console.log(response.work);
-                // ...
             }).catch(function (error) {
-                // Handle Errors here.
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // The email of the user's account used.
-                const email = error.email;
-                // The firebase.auth.AuthCredential type that was used.
-                const credential = error.credential;
-                // ...
+
             });
 
         }
 
         google_login() {
-            this.provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+            const provider = new firebase.auth.GoogleAuthProvider();
+            //provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
+            //provider.setCustomParameters({"login_hint": "user@example.com"});
 
-            this.provider.setCustomParameters({
-                "login_hint": "user@example.com"
-            });
-
-            firebase.auth().signInWithPopup(this.provider).then(function (result) {
+            firebase.auth().signInWithPopup(provider).then(function (result) {
                 console.log(result);
                 // This gives you a Google Access Token. You can use it to access the Google API.
                 const token = result.credential.accessToken;
                 // The signed-in user info.
                 const user = result.user;
-                // ...
+                console.log(JSON.stringify(user));
             }).catch(function (error) {
-                console.log(error);
-                // Handle Errors here.
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // The email of the user's account used.
-                const email = error.email;
-                // The firebase.auth.AuthCredential type that was used.
-                const credential = error.credential;
-                // ...
+
             });
         }
 
@@ -376,9 +350,9 @@
             const user_password = $("#login_password").val();
 
             if (!MyFunctions.is_valid_email(credential, false, null) && !MyFunctions.is_valid_contact(credential, false, null)) {
-
+                alertify.alert("Enter a valid email or contact");
             } else if (user_password.length < 6) {
-
+                alertify.alert("Password must at least be 6 characters");
             } else {
                 const loader = new Loader("Logging in, please wait");
                 $.post("admin/files/functions/constants.php",

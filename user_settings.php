@@ -9,16 +9,13 @@
         <title>FlexiStudy | Settings</title>
 
         <?php require_once 'web_links.php' ?>
-        <link href='admin/files/lib/css/client/client_courses.css' rel='stylesheet' type='text/css'/>
     </head>
     <body>
+        <?php require_once 'web_header.php'; ?>
+
         <div class='container-fluid p-0'>
             <div class='row m-0'>
-                <div class='col-12 col-sm-4 col-md-3 col-lg-2 p-1 p-md-3' id='side_navbar'>
-                    <?php require_once 'web_sidebar.php' ?>
-                </div>
-
-                <div class='col-12 col-sm-8 col-md-7 col-lg-10 p-0'>
+                <div class='col-12 p-0' style="min-height: 90vh">
 
                 </div>
             </div>

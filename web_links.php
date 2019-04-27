@@ -1,7 +1,7 @@
 <meta charset='UTF-8'>
 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+<script src="admin/files/lib/js/firebase.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
 <script>
     // Initialize Firebase
     const config = {

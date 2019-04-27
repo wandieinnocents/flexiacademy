@@ -1,6 +1,10 @@
 <?php
     session_start();
 
+  /*  echo $_SERVER['HTTP_USER_AGENT'];
+    $browser = get_browser($_SERVER['HTTP_USER_AGENT'], true);
+    print_r($browser);*/
+
     date_default_timezone_set('Africa/Kampala');
     define("username", "william");
     define("password", "dev2525");
@@ -33,11 +37,11 @@
             // destroy the session
             session_destroy();
 
-            echo json_encode(array('code' => 1));
+            echo json_encode(['code' => 1]);
         }
 
         private function social_sign_in($user_account, $first_name, $last_name, $user_name, $date_of_birth,
-                                        $email_address, $mobile_contact) {
+                                        $email_address, $mobile_contact, $profile_picture) {
 
         }
 
@@ -47,7 +51,7 @@
             $statement->bindParam(':email_address', $_POST['email_address']);
             $statement->execute();
             if ($statement->rowCount() > 0) {
-                echo json_encode(array('code' => 2));
+                echo json_encode(['code' => 2]);
                 die();
             }
 
@@ -56,7 +60,7 @@
             $statement->bindParam(':mobile_contact', $_POST['mobile_contact']);
             $statement->execute();
             if ($statement->rowCount() > 0) {
-                echo json_encode(array('code' => 3));
+                echo json_encode(['code' => 3]);
                 die();
             }
 
@@ -64,10 +68,10 @@
                          email_address, mobile_contact, user_password, password_salt, user_account, user_roles) VALUES (:first_name, :last_name, 
                          :user_name, :date_of_birth, :email_address, :mobile_contact, :user_password, :password_salt, :user_account, :user_roles)');
 
-            $password_salt = hash('sha512', uniqid(mt_rand(1, mt_getrandmax()), TRUE));
+            $password_salt = hash('sha512', uniqid(mt_rand(1, mt_getrandmax()), true));
             $user_password = hash('sha512', $_POST['user_password'] . $password_salt);
             $date_of_birth = strtotime($_POST['date_of_birth']);
-            $user_roles = array('student' => 1);
+            $user_roles = ['student' => 1];
             $user_roles = json_encode($user_roles);
             $user_account = 'flexi_account';
 
@@ -83,8 +87,8 @@
             $statement->bindParam(':user_account', $user_account);
             $statement->execute();
 
-            $connection = NULL;
-            echo json_encode(array('code' => 1));
+            $connection = null;
+            echo json_encode(['code' => 1]);
         }
 
         private function login_user() {
@@ -95,14 +99,14 @@
             $statement->execute();
 
             if ($statement->rowCount() == 0) {
-                echo json_encode(array('code' => 2));
+                echo json_encode(['code' => 2]);
                 die();
             }
 
             $data = $statement->fetch();
 
             if ((hash('sha512', $_POST['login_password'] . $data['password_salt']) != $data['user_password'])) {
-                echo json_encode(array('code' => 3));
+                echo json_encode(['code' => 3]);
                 die();
             }
 
@@ -122,12 +126,12 @@
             $_SESSION['user_account'] = $data['user_account'];
             $_SESSION['user_roles'] = $data['user_roles'];
 
-            echo json_encode(array('code' => 1));
+            echo json_encode(['code' => 1]);
         }
     }
 
     function connect_database() {
-        $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
+        $options = [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'];
 
         try {
             $connection = new PDO("mysql:host=" . host . ";dbname=" . dbname . ";charset=utf8",
@@ -136,7 +140,7 @@
             $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             return $connection;
         } catch (PDOException $ex) {
-            return NULL;
+            return null;
         }
     }
 

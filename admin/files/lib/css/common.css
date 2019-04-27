@@ -5,14 +5,10 @@
 @import "elegant_fonts.css";
 
 :root {
-    --color_main     : #0A2C90;
-    --main_color     : #0A2C90;
+    --main_color     : #091F66;
 
     --progress_color : #666666;
     --border-color   : #EDEDED;
-
-    --footer         : #0A2C90;
-    /*  --footer         : #3D3D3D;*/
 
     background       : #F8F8F8;
     font-size        : 0.875rem;
@@ -393,25 +389,36 @@ hr {
 }
 
 .btn.solid {
-    background : var(--color_main);
+    background : var(--main_color);
     color      : white;
 }
 
 .btn.solid:hover {
     background   : transparent;
-    color        : var(--color_main);
-    border-color : var(--color_main);
+    color        : var(--main_color);
+    border-color : var(--main_color);
 }
 
 .btn.empty {
-    color      : var(--color_main);
+    color      : var(--main_color);
     background : transparent;
 }
 
 .btn.empty:hover {
     color        : white;
-    background   : var(--color_main);
-    border-color : var(--color_main);
+    background   : var(--main_color);
+    border-color : var(--main_color);
+}
+
+.btn:disabled, .btn:disabled:hover {
+    background   : #7E7E7E;
+    cursor       : not-allowed;
+    border-color : #7E7E7E;
+    color        : white;
+}
+
+.custom-select {
+    width : 100%;
 }
 
 /*-------- Preloader --------*/
@@ -432,7 +439,7 @@ hr {
 #progress_modal #loader_content > span {
     background-color : white;
     padding          : 3px 5px;
-    color            : var(--color_main);
+    color            : var(--main_color);
     font-style       : italic;
     font-weight      : 700;
     display          : block;

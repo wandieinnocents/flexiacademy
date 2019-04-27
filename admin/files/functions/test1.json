@@ -1,0 +1,31 @@
+{
+  "uid": "CPxSSbtXQoSDB6cppYgwm6tMBCv1",
+  "displayName": "William Pande Moris",
+  "photoURL": "https://graph.facebook.com/1446470715487783/picture",
+  "email": "pande.william67@gmail.com",
+  "emailVerified": false,
+  "phoneNumber": null,
+  "isAnonymous": false,
+  "providerData": [
+    {
+      "uid": "1446470715487783",
+      "displayName": "William Pande Moris",
+      "photoURL": "https://graph.facebook.com/1446470715487783/picture",
+      "email": "pande.william67@gmail.com",
+      "phoneNumber": null,
+      "providerId": "facebook.com"
+    }
+  ],
+  "apiKey": "AIzaSyDdAfbHNbARIZipw-zYzbih1okcuNwxb4Q",
+  "appName": "[DEFAULT]",
+  "authDomain": "flexiacademy.firebaseapp.com",
+  "stsTokenManager": {
+    "apiKey": "AIzaSyDdAfbHNbARIZipw-zYzbih1okcuNwxb4Q",
+    "refreshToken": "AEu4IL0SmlE2_DRYh69SzRwh3dI1stUSdRt8R_1hUWTTZUdGFgX5U9oMeYqP6CKbwxwm3pgnnOHWyGBSQiWQw2uxVd4iw4TT9x8TO-Fikc3iI5OVg0acDqufUaB1RapAKmKG846k6Yypez6CwYpuAMLkRJC16HW0oOQKLGsheBYx7Q7nWayiOxLW6sQBh-hRBuPaG-tITceSqkKWuUeXWAEEUit-UrbiCLa41Ctc1Jc3QO7DaGHbj_u9Wl6f9T4kM0sPkmscGXjyxLna3DkYlOj6LAIom7kyfn7w5Qu6E0IysPkmxjQXBi2_gMUbVsectAvJc0SrUUOh",
+    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjVmYjMyOWRmNjdiYjY4NDVkNDk1NDNiMGM0OWIzNWM4ODg1NzllYmEiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiV2lsbGlhbSBQYW5kZSBNb3JpcyIsInBpY3R1cmUiOiJodHRwczovL2dyYXBoLmZhY2Vib29rLmNvbS8xNDQ2NDcwNzE1NDg3NzgzL3BpY3R1cmUiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZmxleGlhY2FkZW15IiwiYXVkIjoiZmxleGlhY2FkZW15IiwiYXV0aF90aW1lIjoxNTU1ODYxODAxLCJ1c2VyX2lkIjoiQ1B4U1NidFhRb1NEQjZjcHBZZ3dtNnRNQkN2MSIsInN1YiI6IkNQeFNTYnRYUW9TREI2Y3BwWWd3bTZ0TUJDdjEiLCJpYXQiOjE1NTU4NjE4MDEsImV4cCI6MTU1NTg2NTQwMSwiZW1haWwiOiJwYW5kZS53aWxsaWFtNjdAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImZhY2Vib29rLmNvbSI6WyIxNDQ2NDcwNzE1NDg3NzgzIl0sImVtYWlsIjpbInBhbmRlLndpbGxpYW02N0BnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJmYWNlYm9vay5jb20ifX0.oBP_5H54pvxmUJ6Vh87iYaP7gi4Hh21jnYH0bWxH5lROj4N7iurN8wYk5iK9q-ARiuCStNLEXF9e087bVNgmtpTjbmZNja9Sv9UYuj79tJF4tLFg9ym-eU0BC0rW5XFNPHAc6os7jrAod6cUDAVPk_zbD6s1LjlukMfdWGYgqYcE_IxwfNW8cgl9BQKf98-66SBHpcPPgvyqnXrbKWvgHv7rTNXUnqRs8Y4uD-AnlordJ8NVoqEwe_9tZ2NB_iSP016hL5n1Iu0MplmjEGs97Ty44zJeHX9PYZ5gDfrOkAZFjVIO-hIzx5b0lwkDnu0hD6n2m0NhF4DCcOjnEcBUBw",
+    "expirationTime": 1555865402199
+  },
+  "redirectEventId": null,
+  "lastLoginAt": "1555861684722",
+  "createdAt": "1555570551838"
+}

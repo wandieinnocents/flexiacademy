@@ -1,5 +1,4 @@
-@import "footer.css";
-@import "nav_header.css";
+@import "header_footer.css";
 @import "vendors.css";
 @import "../skins/all.css";
 
@@ -295,7 +294,7 @@
     -webkit-animation-fill-mode : forwards;
     width                       : 100%;
     -moz-animation-fill-mode    : forwards;
-    background                  : var(--color_main);
+    background                  : var(--main_color);
 }
 
 .animated .block-vertical {
@@ -303,7 +302,7 @@
     animation-fill-mode         : forwards;
     -webkit-animation-fill-mode : forwards;
     -moz-animation-fill-mode    : forwards;
-    background                  : var(--color_main);
+    background                  : var(--main_color);
 }
 
 .block-reveal img {
@@ -391,127 +390,4 @@
     to {
         opacity : 1;
     }
-}
-
-/*login and registration*/
-#login_modal figure, #register_modal figure {
-    text-align  : center;
-    background  : #480048;
-    background  : -webkit-linear-gradient(left, #480048, #C04848);
-    background  : linear-gradient(to right, #480048, #C04848);
-    width       : calc(100% + 28px);
-    height      : auto;
-    padding     : 10px 0;
-    margin-left : -14px;
-    margin-top  : -14px;
-}
-
-#login_modal .copy, #register_modal .copy {
-    text-align  : center;
-    height      : 30px;
-    width       : 100%;
-    color       : #999999;
-    font-weight : 500;
-}
-
-.access_social {
-    margin-top : 25px;
-}
-
-button.social_bt {
-    -webkit-border-radius : 3px;
-    -moz-border-radius    : 3px;
-    -ms-border-radius     : 3px;
-    border-radius         : 3px;
-    text-align            : center;
-    color                 : #FFFFFF;
-    width                 : 100%;
-    margin-bottom         : 10px;
-    display               : block;
-    padding               : 12px;
-    line-height           : 1;
-    position              : relative;
-    -moz-transition       : all 0.3s ease-in-out;
-    -o-transition         : all 0.3s ease-in-out;
-    -webkit-transition    : all 0.3s ease-in-out;
-    -ms-transition        : all 0.3s ease-in-out;
-    transition            : all 0.3s ease-in-out;
-    cursor                : pointer;
-}
-
-button.social_bt:hover {
-    -webkit-filter  : brightness(115%);
-    filter          : brightness(115%);
-    text-decoration : none;
-}
-
-button.social_bt.facebook:before, button.social_bt.google:before, button.social_bt.linkedin:before {
-    font-family : 'ElegantIcons', serif;
-    position    : absolute;
-    left        : 12px;
-    top         : 10px;
-    font-size   : 130%;
-    color       : #FFFFFF;
-}
-
-button.social_bt.facebook {
-    background-color : #3B5998;
-}
-
-button.social_bt.facebook:before {
-    content : "\e093";
-}
-
-button.social_bt.google {
-    background-color : #DC4E41;
-}
-
-button.social_bt.google:before {
-    content : "\e096";
-    top     : 12px;
-}
-
-button.social_bt.linkedin {
-    background-color : #0077B5;
-}
-
-button.social_bt.linkedin:before {
-    content : "\e09d";
-}
-
-@media (max-width : 767px) {
-    .access_social {
-        margin-top : 30px;
-    }
-}
-
-.divider {
-    text-align       : center;
-    height           : 1px;
-    margin           : 30px 0 35px 0;
-    background-color : #EDEDED;
-}
-
-.divider span {
-    position         : relative;
-    top              : -22px;
-    background-color : #FFFFFF;
-    display          : inline-block;
-    padding          : 10px;
-    font-style       : normal;
-    font-weight      : 800;
-    font-size        : 110%;
-    color            : var(--main_color);
-}
-
-#button_register, #button_login {
-    cursor : pointer;
-}
-
-#button_register:hover, #button_login:hover {
-    color : darkgray;
-}
-
-#registration_form input {
-    font-size : 100%;
 }

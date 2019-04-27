@@ -1,6 +1,6 @@
 <?php
-    $name = 'sys_courses';
-    require_once 'admin/files/functions/constants.php';
+$name = 'sys_courses';
+require_once 'admin/files/functions/constants.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,13 +15,12 @@
 
     </head>
     <body>
-        <div class='container-fluid p-0'>
-            <div class='row m-0'>
-                <div class='col-12 col-sm-4 col-md-3 col-lg-2 p-1 p-md-3' id='side_navbar'>
-                    <?php require_once 'web_sidebar.php' ?>
-                </div>
+        <?php require_once 'web_header.php'; ?>
 
-                <div class='col-12 col-sm-8 col-md-7 col-lg-10 p-0'>
+
+        <div class='container p-0'>
+            <div class='row m-0'>
+                <div class='col-12 p-0'>
                     <div class='row mx-0'>
                         <div class='col-12 col-sm-6 col-md-4 col-lg-3 p-2' id='filters'>
                             <div id="filters_col">
@@ -128,7 +127,10 @@
                                             <small>Category</small>
                                             <h3>Persius delenit has cu</h3>
                                             <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
+                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i
+                                                        class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i>
+                                                <small>(145)</small>
+                                            </div>
                                         </div>
                                         <ul>
                                             <li><i class="fas fa-clock"></i> 1h 30min</li>
