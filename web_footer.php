@@ -165,13 +165,16 @@
 </div>
 
 <!-- The Modal -->
-<div class="modal" id="progress_modal">
+<div class="modal" id="progress_modal" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body text-center">
                 <div id="loader"></div>
                 <div id='loader_content'>
                     <span></span>
+                </div>
+                <div class="progress" id="progress_div">
+                    <div class="progress-bar progress-bar-animated" id="progress_bar"></div>
                 </div>
             </div>
         </div>
@@ -203,11 +206,19 @@
 <!-- popper -->
 <script src='admin/files/lib/js/theia-sticky-sidebar.min.js'></script>
 
-<script src='admin/files/lib/js/scripts.js' type='text/javascript'></script>
-
+<script src='admin/files/lib/js/custom/scripts.js' type='text/javascript'></script>
 
 <script>
     $(document).ready(function () {
+        //const loader = new Loader("Uploading cover image, please wait");
+        // Check and radio input styles
+        $("input.icheck").iCheck({
+            checkboxClass: "icheckbox_square-grey",
+            radioClass: "iradio_square-grey"
+        });
+
+        $('small.error').addClass('d-none');
+
         // WoW - animation on scroll
         const wow = new WOW(
             {
@@ -440,7 +451,8 @@
                                             alertify.alert("System error occurred please retry");
                                             break;
                                     }
-                                }, "text");
+                                }, "text"
+                            );
                         }
                     }
                 }
@@ -450,26 +462,53 @@
 
     class Loader {
         constructor(text) {
-            $("#progress_modal").modal({backdrop: "static"});
+            $("#progress_modal").modal({backdrop: "static", keyboard: false});
 
             const parent = this;
             this.dots = 1;
+            this.progress_div = $('#progress_div');
+            if (!this.progress_div.hasClass('d-none')) {
+                this.progress_div.addClass('d-none');
+            }
 
             this.timer = setInterval(function () {
-                let dots = "";
-                for (let index = 0; index < parent.dots; index++) {
-                    dots = dots + ".";
-                }
-                $("#progress_modal #loader_content > span").html(text + dots);
+                    let dots = "";
+                    for (let index = 0; index < parent.dots; index++) {
+                        dots = dots + ".";
+                    }
+                    $("#progress_modal #loader_content > span").html(text + dots);
 
-                parent.dots = parent.dots >= 10 ? 1 : parent.dots + 1;
-                console.log("Called");
-            }, 500);
+                    parent.dots = parent.dots >= 10 ? 1 : parent.dots + 1;
+                }, 500
+            );
         }
 
         hide_modal() {
             clearInterval(this.timer);
             $("#progress_modal").modal("hide");
+        }
+
+        update_progress(loaded, total) {
+            if (this.progress_div.hasClass('d-none')) {
+                this.progress_div.removeClass('d-none');
+            }
+
+            const progress_bar = $("#progress_bar");
+
+            const completed = parseInt((loaded / total) * 100);
+            if (completed === 100) {
+                progress_bar.css("width", "100%");
+                progress_bar.html("");
+                progress_bar.html("Server side data processing, please wait...");
+            } else {
+                progress_bar.css("width", completed + "%");
+                progress_bar.html(completed + "%");
+                let loaded_text = (loaded / 1024);
+                loaded_text = loaded_text > 1024 ? (loaded_text / 1024).toFixed(2) + "mbs" : parseInt(loaded_text) + "kbs";
+                let total_text = (total / 1024);
+                total_text = total_text > 1024 ? (total_text / 1024).toFixed(2) + "mbs" : parseInt(total_text) + "kbs";
+                progress_bar.html("Uploading, " + loaded_text + " of " + total_text);
+            }
         }
     }
 </script>

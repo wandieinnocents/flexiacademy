@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-  /*  echo $_SERVER['HTTP_USER_AGENT'];
-    $browser = get_browser($_SERVER['HTTP_USER_AGENT'], true);
-    print_r($browser);*/
+    /*  echo $_SERVER['HTTP_USER_AGENT'];
+      $browser = get_browser($_SERVER['HTTP_USER_AGENT'], true);
+      print_r($browser);*/
 
     date_default_timezone_set('Africa/Kampala');
     define("username", "william");
@@ -144,6 +144,43 @@
         }
     }
 
+    function get_categories(pdo $connection) {
+        $statement = $connection->prepare('select count(structure_id) as structure_number 
+                                                  from course_structure limit 1');
+        $statement->execute();
+        $structure_number = ($statement->fetch())['structure_number'];
+        echo <<<EOT
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox" class="icheck" checked> &nbsp;All
+                                                        <small>($structure_number)</small>
+                                                    </label>
+                                                </li>
+EOT;
+
+        $statement = $connection->prepare('select count(structure_id) as structure_number,
+                                                      category_name
+                                                  from course_structure 
+                                                        inner join course_categories 
+                                                            on course_structure.category_id = course_categories.category_id
+                                                  group by category_name
+                                                  order by category_name');
+        $statement->execute();
+
+        foreach ($statement->fetchAll() as $row) {
+            $structure_number = $row['structure_number'];
+            $category_name = $row['category_name'];
+            echo <<<EOT
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox" class="icheck"> &nbsp;$category_name
+                                                        <small>($structure_number)</small>
+                                                    </label>
+                                                </li>
+EOT;
+        }
+    }
+
     function get_rating($rating, $total = '') {
         $_0_5 = ($rating >= 0.5 ? 'voted' : '') . ($rating >= 1.0 || $rating == 0.0 ? ' d-none' : '');
         $_1_0 = ($rating >= 1.0 ? 'voted' : '');
@@ -158,7 +195,7 @@
 
         $show = $total == '' ? 'd-none' : '';
 
-        echo <<<EOT
+        return <<<EOT
          <span class='rating'>
             <i class='fa fa-star-half $_0_5'></i>
             <i class='fa fa-star $_1_0'></i>

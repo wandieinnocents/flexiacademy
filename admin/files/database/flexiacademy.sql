@@ -134,7 +134,7 @@ ALTER TABLE `course_categories`
 -- Indexes for table `course_modules`
 --
 ALTER TABLE `course_modules`
-  ADD PRIMARY KEY (`title_id`),
+  ADD PRIMARY KEY (module_id),
   ADD KEY `course_modules_course_structure_structure_id_fk` (`course_structure_id`);
 
 --
@@ -176,7 +176,7 @@ ALTER TABLE `course_categories`
 -- AUTO_INCREMENT for table `course_modules`
 --
 ALTER TABLE `course_modules`
-  MODIFY `title_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY module_id int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `course_structure`

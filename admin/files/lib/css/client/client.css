@@ -76,9 +76,9 @@
     display            : block;
     position           : relative;
     margin-bottom      : 30px;
-    -webkit-box-shadow : 0 0 30px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow    : 0 0 30px 0 rgba(0, 0, 0, 0.1);
-    box-shadow         : 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow : 0 0 10px 0 var(--main_color);
+    -moz-box-shadow    : 0 0 10px 0 var(--main_color);
+    box-shadow         : 0 0 10px 0 var(--main_color);
 }
 
 .box_grid a.wish_bt {
@@ -178,6 +178,8 @@
     -ms-transition      : all 0.3s ease-in-out;
     transition          : all 0.3s ease-in-out;
     backface-visibility : hidden;
+    height              : 200px;
+    width               : 100%;
 }
 
 .box_grid figure a:hover img {
@@ -199,16 +201,14 @@
     -webkit-animation-fill-mode : forwards;
     -moz-animation-fill-mode    : forwards;
     position                    : absolute;
-    left                        : 20px;
+    right                       : 0;
     bottom                      : 0;
-    background-color            : black;
-    background-color            : rgba(0, 0, 0, 0.7);
+    background-color            : var(--main_color);
     padding                     : 10px 15px;
     line-height                 : 1;
-    color                       : #FFFFFF;
+    color                       : white;
     font-weight                 : 600;
-    font-size                   : 21px;
-    font-size                   : 1.3125rem;
+    font-size                   : 135%;
 }
 
 .box_grid .wrapper {

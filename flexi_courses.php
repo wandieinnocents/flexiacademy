@@ -1,6 +1,6 @@
 <?php
-$name = 'sys_courses';
-require_once 'admin/files/functions/constants.php';
+    $name = 'sys_courses';
+    require_once 'admin/files/functions/constants.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,15 +23,19 @@ require_once 'admin/files/functions/constants.php';
                 <div class='col-12 p-0'>
                     <div class='row mx-0'>
                         <div class='col-12 col-sm-6 col-md-4 col-lg-3 p-2' id='filters'>
+                            <div class="col-12 px-1 py-2">
+                                <input type="text" placeholder="Filter by course name" class="form-control">
+                            </div>
+
                             <div id="filters_col">
-                                <a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters"
+                                <a data-toggle="collapse" href="#collapse_filters" aria-expanded="false" aria-controls="collapse_filters"
                                    id="filters_col_bt" class='fas fa-sliders-h'>Filters
                                 </a>
 
-                                <div class="collapse show" id="collapseFilters">
+                                <div class="collapse show" id="collapse_filters">
                                     <div class="filter_type">
                                         <h6>Category</h6>
-                                        <ul>
+                                        <ul id="list_category">
                                             <li>
                                                 <label>
                                                     <input type="checkbox" class="icheck" checked> &nbsp;All
@@ -70,6 +74,7 @@ require_once 'admin/files/functions/constants.php';
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div class="filter_type">
                                         <h6>Rating</h6>
                                         <ul>
@@ -106,13 +111,16 @@ require_once 'admin/files/functions/constants.php';
                                         </ul>
                                     </div>
                                 </div>
-                                <!--/collapse -->
+                            </div>
+
+                            <div class="col-12 px-1 py-2">
+                                <button class="btn solid">Apply Filter</button>
                             </div>
                         </div>
 
                         <div class='col-12 col-sm-6 col-md-8 col-lg-9 p-2'>
                             <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4 d-none">
+                                <div class="col-12 col-md-6 col-lg-4">
                                     <div class="box_grid wow">
                                         <figure class="block-reveal">
                                             <div class="block_horizontal"></div>
@@ -140,7 +148,7 @@ require_once 'admin/files/functions/constants.php';
                                     </div>
                                 </div>
 
-                                <div class='col-12 p-1 no_list'>No courses to display</div>
+                                <div class='col-12 p-1 no_list d-none'>No courses to display</div>
 
                             </div>
                         </div>
@@ -153,11 +161,6 @@ require_once 'admin/files/functions/constants.php';
 
         <script>
             $(document).ready(function () {
-                // Check and radio input styles
-                $("input.icheck").iCheck({
-                    checkboxClass: "icheckbox_square-grey",
-                    radioClass: "iradio_square-grey"
-                });
 
             });
         </script>

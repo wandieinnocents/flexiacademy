@@ -38,5 +38,22 @@ MyFunctions = {
         if (input !== null)
             input.focus();
         return valid;
-    }
+    },
+    is_number_valid(number) {
+        const regex = /^[+-]?\d+(\.\d+)?$/;
+        let valid = regex.test(number);
+        if (number === "")
+            valid = false;
+        return valid;
+    },
+    get_time_in_seconds(string_time) {
+        if (string_time === '') {
+            return '';
+        }
+        const date = Date.parse(string_time);
+        return date / 1000;
+    },
+    input_changed: function (element, label) {
+        label.html(element.target.files[0].name);
+    },
 };
