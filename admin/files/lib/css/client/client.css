@@ -86,8 +86,7 @@
     right                       : calc((100% - 30px) / 2);
     top                         : 15px;
     z-index                     : 1;
-    background-color            : black;
-    background-color            : rgba(0, 0, 0, 0.6);
+    background-color            : var(--main_color);
     padding                     : 9px 10px;
     display                     : inline-block;
     animation                   : color .3s ease-in-out;
@@ -113,7 +112,7 @@
 }
 
 .box_grid a.wish_bt:hover:after {
-    color           : red;
+    color           : var(--white);
     text-decoration : none;
 }
 
@@ -151,7 +150,6 @@
     border-radius         : 20px;
     display               : inline-block;
     color                 : #222222;
-    font-size             : 12px;
     font-size             : 0.75rem;
     padding               : 5px 10px;
 }
@@ -244,8 +242,8 @@
 
 .box_grid ul li:last-child a {
     background            : #FFFFFF;
-    border                : 2px solid #111111;
-    color                 : #111111;
+    border                : 2px solid var(--main_color);
+    color                 : var(--main_color);
     font-weight           : 500;
     -moz-transition       : all 0.3s ease-in-out;
     -o-transition         : all 0.3s ease-in-out;
@@ -267,7 +265,7 @@
 }
 
 .box_grid ul li:last-child a:hover {
-    background      : #111111;
+    background      : var(--main_color);
     color           : #FFFFFF;
     text-decoration : none;
 }

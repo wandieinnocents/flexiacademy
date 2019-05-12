@@ -1,6 +1,5 @@
 <?php
     $name = 'tutor_courses';
-
     require_once 'admin/files/functions/constants.php';
     $connection = connect_database();
 ?>
@@ -56,7 +55,7 @@
             </div>
         </div>
 
-        <div id="create_course" data-toggle="modal" data-target="#course_creation_modal" data-backdrop="static" data-keyboard="true">
+        <div id="create_course">
             <i class="fas fa-folder-plus"></i>
         </div>
 

@@ -19,17 +19,12 @@
             <div class='row mx-0'>
                 <div class='col-12  p-0'>
                     <div id='header_image'>
-                        <ul>
-                            <li><a href='index.php'>HOME</a></li>
-                            <li><a href='flexi_courses.php'>COURSES</a></li>
-                            <li><a href='user_courses.php'>MY COURSES</a></li>
-                            <li><a href='tutor_courses.php'>TUTOR COURSES</a></li>
-                            <li><a href='#'>ABOUT</a></li>
-                            <li><a href='#'>NEWS</a></li>
-                            <li><a href='user_settings.php'>ACCOUNT</a></li>
-                        </ul>
 
-                        <div>
+                        <div id="nav_content">
+                            <?php require_once 'web_header.php'; ?>
+                        </div>
+
+                        <div id="other_content">
                             <div id='div_1'>
                                 <div>STUDY ONLINE</div>
                                 <div>Enjoy today and get the best online courses</div>
@@ -80,150 +75,52 @@
 
                 <div class='col-12 px-1'>
                     <div id="recommended" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="box_grid">
-                                <figure>
-                                    <a href="#" class="wish_bt"></a>
-                                    <a href="flexi_course_details.php?course=2">
-                                        <div class="preview"><span>Preview course</span></div>
-                                        <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt=""></a>
-                                    <div class="price">$39</div>
+                        <?php
+                            $statement = $connection->prepare('SELECT structure_id, category_name, course_name, course_fee, 
+                                course_highlight, cover_image, rating_average, rating_people 
+                            FROM course_structure
+                              INNER JOIN course_categories ON course_structure.category_id = course_categories.category_id
+                            LIMIT 6');
 
-                                </figure>
-                                <div class="wrapper">
-                                    <small>Category</small>
-                                    <h3>Persius delenit has cu</h3>
-                                    <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                    <?php get_rating(3.5, 127) ?>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                    <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                    <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        <div class="item">
-                            <div class="box_grid">
-                                <figure>
-                                    <a href="#" class="wish_bt"></a>
-                                    <a href="flexi_course_details.php?course=2">
-                                        <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="price">$45</div>
-                                    <div class="preview"><span>Preview course</span></div>
-                                </figure>
-                                <div class="wrapper">
-                                    <small>Category</small>
-                                    <h3>Persius delenit has cu</h3>
-                                    <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                    <?php get_rating(4.5, 1207) ?>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                    <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                    <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        <div class="item">
-                            <div class="box_grid">
-                                <figure>
-                                    <a href="#" class="wish_bt"></a>
-                                    <a href="flexi_course_details.php?course=2">
-                                        <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="price">$54</div>
-                                    <div class="preview"><span>Preview course</span></div>
-                                </figure>
-                                <div class="wrapper">
-                                    <small>Category</small>
-                                    <h3>Persius delenit has cu</h3>
-                                    <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                    <?php get_rating(4, 1450) ?>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                    <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                    <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        <div class="item">
-                            <div class="box_grid">
-                                <figure>
-                                    <a href="#" class="wish_bt"></a>
-                                    <a href="flexi_course_details.php?course=2">
-                                        <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="price">$27</div>
-                                    <div class="preview"><span>Preview course</span></div>
-                                </figure>
-                                <div class="wrapper">
-                                    <small>Category</small>
-                                    <h3>Persius delenit has cu</h3>
-                                    <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                    <?php get_rating(3, 120) ?>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                    <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                    <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        <div class="item">
-                            <div class="box_grid">
-                                <figure>
-                                    <a href="#" class="wish_bt"></a>
-                                    <a href="flexi_course_details.php?course=2">
-                                        <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="price">$35</div>
-                                    <div class="preview"><span>Preview course</span></div>
-                                </figure>
-                                <div class="wrapper">
-                                    <small>Category</small>
-                                    <h3>Persius delenit has cu</h3>
-                                    <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                    <?php get_rating(2.5, 457) ?>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                    <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                    <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /item -->
-                        <div class="item">
-                            <div class="box_grid">
-                                <figure>
-                                    <a href="#" class="wish_bt"></a>
-                                    <a href="flexi_course_details.php?course=2">
-                                        <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                    </a>
-                                    <div class="price">$54</div>
-                                    <div class="preview"><span>Preview course</span></div>
-                                </figure>
-                                <div class="wrapper">
-                                    <small>Category</small>
-                                    <h3>Persius delenit has cu</h3>
-                                    <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                    <?php get_rating(5, 125) ?>
-                                </div>
-                                <ul>
-                                    <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                    <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                    <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /item -->
+                            $statement->execute();
+                            foreach ($statement->fetchAll() as $row) {
+                                $structure_id =$row['structure_id'];
+                                $category_name = $row['category_name'];
+                                $course_name = $row['course_name'];
+                                $course_highlight =$row['course_highlight'];
+                                $cover_image = empty($row['cover_image']) ? 'admin/files/images/temp/course_list.jpg' :
+                                    'admin/files/images/pictures/thumbnails/' . $row["cover_image"];
+                                $rating = get_rating($row['rating_average'], $row['rating_people']);
+                                $course_fee = number_format($row['course_fee'], 0);
+
+                                echo <<<EOT
+                                    <div class="item">
+                                        <div class="box_grid">
+                                            <figure>
+                                                <a href="#" class="wish_bt"></a>
+                                                <a href="flexi_course_details.php?course=$structure_id">
+                                                    <div class="preview"><span>$category_name</span></div>
+                                                    <img src="$cover_image" class="img-fluid" alt=""></a>
+                                                <div class="price">$course_fee</div>
+            
+                                            </figure>
+                                            <div class="wrapper">
+                                                <small>$category_name</small>
+                                                <h3>$course_name</h3>
+                                                <p class="max_4">$course_highlight</p>
+                                                $rating
+                                            </div>
+                                            <ul>
+                                                <li><i class="fas fa-clock"></i> 0min</li>
+                                                <li><i class="fas fa-thumbs-up"></i> 0</li>
+                                                <li><a href="flexi_course_details.php?course=$structure_id">Enroll now</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+EOT;
+
+                            }
+                        ?>
                     </div>
                 </div>
             </div>

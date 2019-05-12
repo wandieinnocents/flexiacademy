@@ -23,13 +23,6 @@ class MultiForm {
             parent.next_prev_tab(1);
         });
 
-        this.show_tab();
-
-        this.course_description = '';
-        this.what_you_will_learn = '';
-        this.who_is_this_course_for = '';
-        this.why_is_this_course = '';
-
         const modal = $('#course_creation_modal');
 
         modal.find('input').on('change paste keyup keydown', function () {
@@ -210,20 +203,7 @@ class MultiForm {
                 }
             }
         });
-
-
-        modal.on('shown.bs.modal', function () {
-            parent.course_description = new Editor(parent, parent.step_tab.eq(0), 'course_description', 0);
-
-            parent.what_you_will_learn = new Editor(parent, parent.step_tab.eq(0), 'what_you_will_learn', 0);
-            parent.what_you_will_learn.list_editor();
-
-            parent.who_is_this_course_for = new Editor(parent, parent.step_tab.eq(0), 'who_is_this_course_for', 0);
-            parent.who_is_this_course_for.list_editor();
-
-            parent.why_is_this_course = new Editor(parent, parent.step_tab.eq(0), 'why_is_this_course', 0);
-            parent.why_is_this_course.list_editor();
-
+        modal.on('show.bs.modal', function () {
             parent.course_name.val('');
             parent.category_name.val('');
             parent.course_fee.val('');
@@ -251,6 +231,18 @@ class MultiForm {
             parent.course_certificate.iCheck('update');
 
             parent.modules = [];
+            parent.changed = false;
+        });
+
+        modal.on('shown.bs.modal', function () {
+            parent.current_tab = 0;
+            parent.show_tab();
+            parent.changed = false;
+
+            parent.course_description.resize_editor();
+            parent.what_you_will_learn.resize_editor();
+            parent.why_is_this_course.resize_editor();
+            parent.who_is_this_course_for.resize_editor();
 
             if (parseInt(parent.structure_id.val()) > 0) {
                 const loader = new Loader("Fetching course list, please wait");
@@ -259,8 +251,6 @@ class MultiForm {
                     {operation: "get_course_data", structure_id: parent.structure_id.val()}, function (data) {
 
                         data = JSON.parse(data);
-
-                        console.log(data);
 
                         parent.course_name.val(data['course_name']);
                         parent.category_name.val(data['category_name']);
@@ -303,15 +293,13 @@ class MultiForm {
                         parent.who_is_this_course_for.set_data(data['who_is_for']);
                         parent.why_is_this_course.set_data(data['why_unique']);
 
-
                         parent.display_modules(data['modules']);
 
                         loader.hide_modal();
+                        parent.changed = false;
                     }, "text"
                 );
             }
-
-            parent.changed = false;
         });
 
         modal.on('hidden.bs.modal', function () {
@@ -326,6 +314,20 @@ class MultiForm {
             $('#structure_id').val(structure_id);
             modal.modal({show: true, backdrop: "static", keyboard: true});
         });
+
+        $('#create_course').on('click', function () {
+            $('#structure_id').val('0');
+            modal.modal({show: true, backdrop: "static", keyboard: true});
+        });
+
+        this.course_description = new Editor(parent, parent.step_tab.eq(0), 'course_description', 0);
+        this.what_you_will_learn = new Editor(parent, parent.step_tab.eq(0), 'what_you_will_learn', 0);
+        this.why_is_this_course = new Editor(parent, parent.step_tab.eq(0), 'why_is_this_course', 0);
+        this.who_is_this_course_for = new Editor(parent, parent.step_tab.eq(0), 'who_is_this_course_for', 0);
+
+        parent.who_is_this_course_for.list_editor();
+        parent.what_you_will_learn.list_editor();
+        parent.why_is_this_course.list_editor();
     }
 
     display_modules(modules) {
@@ -348,6 +350,7 @@ class MultiForm {
             {operation: "get_tutor_courses"}, function (data) {
                 loader.hide_modal();
                 $('#tutor_data').html(data);
+                max_4();
             }, "text"
         );
     }
@@ -404,12 +407,6 @@ class MultiForm {
         let current_tab = this.current_tab + index;
         if (current_tab < 0 || current_tab > this.step_tab.length) {
             alertify.error('Dead end');
-            return;
-        }
-
-        if (!this.changed && current_tab < (this.step_tab.length - 1)) {
-            this.current_tab = current_tab;
-            this.show_tab();
             return;
         }
 
@@ -510,163 +507,170 @@ class MultiForm {
 
         for (let index = 0; index < errors.length; index++) {
             if (!errors.eq(index).hasClass('d-none')) {
+                alertify.error("Errors found");
                 return;
             }
         }
 
+        if (this.current_tab === 0) {
+            parent.current_tab = current_tab;
+            parent.show_tab();
 
-        if (this.current_tab === 1) {
-            const loader = new Loader("Saving course structure, please wait");
+        }
 
-            $.post("admin/files/functions/functions.php",
-                {
-                    operation: "save_course_structure",
-                    structure_id: parent.structure_id.val(),
-                    course_name: course_name,
-                    category_name: category_name,
-                    course_fee: course_fee,
-                    start_date: start_date,
-                    end_date: end_date,
-                    course_highlight: course_highlight,
+        if (this.changed) {
+            if (this.current_tab === 0) {
+                parent.current_tab = current_tab;
+                parent.show_tab();
 
-                }, function (data) {
-                    console.log(data);
-                    loader.hide_modal();
+            } else if (this.current_tab === 1) {
+                const loader = new Loader("Saving course structure, please wait");
 
-                    data = JSON.parse(data);
+                $.post("admin/files/functions/functions.php",
+                    {
+                        operation: "save_course_structure",
+                        structure_id: parent.structure_id.val(),
+                        course_name: course_name,
+                        category_name: category_name,
+                        course_fee: course_fee,
+                        start_date: start_date,
+                        end_date: end_date,
+                        course_highlight: course_highlight,
 
-                    switch (parseInt(data["code"])) {
-                        case 1:
-                            parent.current_tab = current_tab;
-                            parent.show_tab();
-                            break;
-                        case 2:
-                            alertify.alert("Course Name is already in use");
-                            break;
-                        default:
-                            alertify.alert("System error occurred please retry");
-                            break;
-                    }
-                }, "text"
-            );
-        } else if (this.current_tab === 2) {
-            const form_data = new FormData();
-            form_data.append("operation", "save_cover_photo");
-            form_data.append("structure_id", parent.structure_id.val());
-            form_data.append("cover_image", cover_image[0].files[0]);
+                    }, function (data) {
+                        console.log(data);
+                        loader.hide_modal();
 
-            const loader = new Loader("Uploading cover image, please wait");
-            $.ajax({
-                xhr: function () {
-                    // noinspection JSValidateTypes
-                    const xhr = new window.XMLHttpRequest();
-                    // noinspection JSUnresolvedVariable
-                    xhr.upload.addEventListener("progress", function (event) {
-                        if (event.lengthComputable) {
-                            loader.update_progress(event.loaded, event.total);
+                        data = JSON.parse(data);
+
+                        switch (parseInt(data["code"])) {
+                            case 1:
+                                parent.current_tab = current_tab;
+                                parent.show_tab();
+                                break;
+                            case 2:
+                                alertify.alert("Course Name is already in use");
+                                break;
+                            default:
+                                alertify.alert("System error occurred please retry");
+                                break;
                         }
-                    }, false);
-                    return xhr;
-                },
-                url: "admin/files/functions/functions.php", type: "POST", data: form_data,
-                async: true, cache: false, contentType: false, processData: false,
-                success: function (response) {
-                    loader.hide_modal();
-                    console.log(response);
-                    response = JSON.parse(response);
-                    switch (parseInt(response["code"])) {
-                        case 1:
+                    }, "text"
+                );
+            } else if (this.current_tab === 2) {
+                const form_data = new FormData();
+                form_data.append("operation", "save_cover_photo");
+                form_data.append("structure_id", parent.structure_id.val());
+                form_data.append("cover_image", cover_image[0].files[0]);
+
+                const loader = new Loader("Uploading cover image, please wait");
+                $.ajax({
+                    xhr: function () {
+                        // noinspection JSValidateTypes
+                        const xhr = new window.XMLHttpRequest();
+                        // noinspection JSUnresolvedVariable
+                        xhr.upload.addEventListener("progress", function (event) {
+                            if (event.lengthComputable) {
+                                loader.update_progress(event.loaded, event.total);
+                            }
+                        }, false);
+                        return xhr;
+                    },
+                    url: "admin/files/functions/functions.php", type: "POST", data: form_data,
+                    async: true, cache: false, contentType: false, processData: false,
+                    success: function (response) {
+                        loader.hide_modal();
+                        console.log(response);
+                        response = JSON.parse(response);
+                        if (parseInt(response["code"]) === 1) {
                             parent.current_tab = current_tab;
                             parent.show_tab();
-                            break;
-                        default:
+                        } else {
                             alertify.alert("Cover image could not be uploaded, please retry");
-                            break;
+                        }
                     }
-                }
-            });
-        } else if (this.current_tab === 3) {
-            this.save_course_information(current_tab, "save_course_description", course_description);
-        } else if (this.current_tab === 4) {
-            const post_data = {
-                video_tutorials: this.video_tutorials.is(':checked') ? 1 : 0,
-                document_resources: this.document_resources.is(':checked') ? 1 : 0,
-                mobile_access: this.mobile_access.is(':checked') ? 1 : 0,
-                course_certificate: this.course_certificate.is(':checked') ? 1 : 0,
-                course_assignments: this.course_assignments.is(':checked') ? 1 : 0,
-            };
-            this.save_course_information(current_tab, "save_learning_material", JSON.stringify(post_data));
-        } else if (this.current_tab === 5) {
-            this.save_course_information(current_tab, "save_what_you_learn", what_you_learn);
+                });
+            } else if (this.current_tab === 3) {
+                this.save_course_information(current_tab, "save_course_description", course_description);
+            } else if (this.current_tab === 4) {
+                const post_data = {
+                    video_tutorials: this.video_tutorials.is(':checked') ? 1 : 0,
+                    document_resources: this.document_resources.is(':checked') ? 1 : 0,
+                    mobile_access: this.mobile_access.is(':checked') ? 1 : 0,
+                    course_certificate: this.course_certificate.is(':checked') ? 1 : 0,
+                    course_assignments: this.course_assignments.is(':checked') ? 1 : 0,
+                };
+                this.save_course_information(current_tab, "save_learning_material", JSON.stringify(post_data));
+            } else if (this.current_tab === 5) {
+                this.save_course_information(current_tab, "save_what_you_learn", what_you_learn);
 
-        } else if (this.current_tab === 6) {
-            this.save_course_information(current_tab, "save_who_is_for", who_is_for);
+            } else if (this.current_tab === 6) {
+                this.save_course_information(current_tab, "save_who_is_for", who_is_for);
 
-        } else if (this.current_tab === 7) {
-            this.save_course_information(current_tab, "save_why_unique", why_unique);
+            } else if (this.current_tab === 7) {
+                this.save_course_information(current_tab, "save_why_unique", why_unique);
 
-        } else if (this.current_tab === 8) {
-            const loader = new Loader("Saving course modules, please wait");
+            } else if (this.current_tab === 8) {
+                const loader = new Loader("Saving course modules, please wait");
 
-            $.post("admin/files/functions/functions.php",
-                {
-                    operation: "save_course_modules",
-                    structure_id: parent.structure_id.val(),
-                    modules: JSON.stringify(modules)
+                $.post("admin/files/functions/functions.php",
+                    {
+                        operation: "save_course_modules",
+                        structure_id: parent.structure_id.val(),
+                        modules: JSON.stringify(modules)
 
-                }, function (data) {
-                    console.log(data);
-                    loader.hide_modal();
+                    }, function (data) {
+                        console.log(data);
+                        loader.hide_modal();
 
-                    data = JSON.parse(data);
+                        data = JSON.parse(data);
 
-                    switch (parseInt(data["code"])) {
-                        case 1:
+                        if (parseInt(data["code"]) === 1) {
                             parent.display_modules(data['modules']);
                             parent.current_tab = current_tab;
                             parent.show_tab();
-                            break;
-
-                        default:
+                        } else {
                             alertify.alert("System error occurred please retry");
-                            break;
-                    }
-                }, "text"
-            );
-        } else if (this.current_tab === 9) {
-            this.select_module_sub_modules.change();
-            if (!parent.all_sub_true) {
-                alertify.error("Incorrect data found, cannot continue");
-                return
-            }
+                        }
+                    }, "text"
+                );
+            } else if (this.current_tab === 9) {
+                this.select_module_sub_modules.change();
+                if (!parent.all_sub_true) {
+                    alertify.error("Incorrect data found, cannot continue");
+                    return
+                }
 
-            const loader = new Loader("Saving course sub modules, please wait");
+                const loader = new Loader("Saving course sub modules, please wait");
 
-            $.post("admin/files/functions/functions.php",
-                {
-                    operation: "save_sub_modules",
-                    structure_id: parent.structure_id.val(),
-                    modules: JSON.stringify(parent.modules)
+                $.post("admin/files/functions/functions.php",
+                    {
+                        operation: "save_sub_modules",
+                        structure_id: parent.structure_id.val(),
+                        modules: JSON.stringify(parent.modules)
 
-                }, function (data) {
-                    console.log(data);
-                    loader.hide_modal();
+                    }, function (data) {
+                        console.log(data);
+                        loader.hide_modal();
 
-                    data = JSON.parse(data);
+                        data = JSON.parse(data);
 
-                    switch (parseInt(data["code"])) {
-                        case 1:
+                        if (parseInt(data["code"]) === 1) {
                             parent.display_modules(data['modules']);
                             parent.select_module_sub_modules.val('0');
                             parent.select_module_sub_modules.change();
                             alertify.alert('Data saved successfully');
-                            break;
-                        default:
+                        } else {
                             alertify.alert("System error occurred please retry");
-                            break;
-                    }
-                }, "text"
-            );
+                        }
+                    }, "text"
+                );
+            }
+        } else {
+            if (current_tab < (this.step_tab.length - 1)) {
+                this.current_tab = current_tab;
+                this.show_tab();
+            }
         }
     }
 
@@ -685,14 +689,11 @@ class MultiForm {
                 loader.hide_modal();
 
                 data = JSON.parse(data);
-                switch (parseInt(data["code"])) {
-                    case 1:
-                        parent.current_tab = current_tab;
-                        parent.show_tab();
-                        break;
-                    default:
-                        alertify.alert("System error occurred please retry");
-                        break;
+                if (parseInt(data["code"]) === 1) {
+                    parent.current_tab = current_tab;
+                    parent.show_tab();
+                } else {
+                    alertify.alert("System error occurred please retry");
                 }
             }, "text"
         );

@@ -1,6 +1,7 @@
 <?php
     $name = 'sys_courses';
     require_once 'admin/files/functions/constants.php';
+    $connection = connect_database();
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@
         <?php require_once 'web_header.php'; ?>
 
 
-        <div class='container p-0'>
+        <div class='container p-0 mb-4'>
             <div class='row m-0'>
                 <div class='col-12 p-0'>
                     <div class='row mx-0'>
@@ -36,42 +37,9 @@
                                     <div class="filter_type">
                                         <h6>Category</h6>
                                         <ul id="list_category">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" class="icheck" checked> &nbsp;All
-                                                    <small>(945)</small>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" class="icheck">&nbsp;&nbsp;Architecture
-                                                    <small>(45)</small>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" class="icheck">&nbsp;&nbsp;Management
-                                                    <small>(30)</small>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" class="icheck">&nbsp;&nbsp;Business
-                                                    <small>(25)</small>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" class="icheck">&nbsp;&nbsp;Literature
-                                                    <small>(56)</small>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" class="icheck">&nbsp;&nbsp;Biology
-                                                    <small>(10)</small>
-                                                </label>
-                                            </li>
+                                            <?php
+                                                get_categories($connection);
+                                            ?>
                                         </ul>
                                     </div>
 
@@ -120,36 +88,55 @@
 
                         <div class='col-12 col-sm-6 col-md-8 col-lg-9 p-2'>
                             <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4">
-                                    <div class="box_grid wow">
-                                        <figure class="block-reveal">
-                                            <div class="block_horizontal"></div>
-                                            <a href="#" class="wish_bt"></a>
-                                            <a href="flexi_course_details.php?course=2">
-                                                <img src="admin/files/images/temp/course_list.jpg" class="img-fluid" alt="">
-                                            </a>
-                                            <div class="price">$54</div>
-                                            <div class="preview"><span>Preview course</span></div>
-                                        </figure>
-                                        <div class="wrapper">
-                                            <small>Category</small>
-                                            <h3>Persius delenit has cu</h3>
-                                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i
-                                                        class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i>
-                                                <small>(145)</small>
-                                            </div>
-                                        </div>
-                                        <ul>
-                                            <li><i class="fas fa-clock"></i> 1h 30min</li>
-                                            <li><i class="fas fa-thumbs-up"></i> 890</li>
-                                            <li><a href="flexi_course_details.php?course=2">Enroll now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <?php
+                                    $statement = $connection->prepare('SELECT structure_id, category_name, course_name, course_fee, 
+                                                                            course_highlight, cover_image, rating_average, rating_people 
+                                                                    FROM course_structure
+                                                                        INNER JOIN course_categories 
+                                                                            ON course_structure.category_id = course_categories.category_id');
+                                    $statement->execute();
+                                    foreach ($statement->fetchAll() as $row) {
+                                        $structure_id = $row['structure_id'];
+                                        $category_name = $row['category_name'];
+                                        $course_name = $row['course_name'];
+                                        $course_highlight = $row['course_highlight'];
+                                        $cover_image = empty($row['cover_image']) ? 'admin/files/images/temp/course_list.jpg' :
+                                            'admin/files/images/pictures/thumbnails/' . $row["cover_image"];
+                                        $rating = get_rating($row['rating_average'], $row['rating_people']);
+                                        $course_fee = number_format($row['course_fee'], 0);
 
-                                <div class='col-12 p-1 no_list d-none'>No courses to display</div>
+                                        echo <<<EOT
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="box_grid wow">
+                                                        <figure class="block-reveal">
+                                                            <div class="block_horizontal"></div>
+                                                            <a href="#" class="wish_bt"></a>
+                                                            <a href="flexi_course_details.php?course=$structure_id">
+                                                                <img src="$cover_image" class="img-fluid" alt="">
+                                                            </a>
+                                                            <div class="price">$course_fee</div>
+                                                            <div class="preview"><span>$course_name</span></div>
+                                                        </figure>
+                                                        <div class="wrapper">
+                                                            <small>Category</small>
+                                                            <h3>$course_name</h3>
+                                                            <p class="max_4">$course_highlight</p>
+                                                            $rating
+                                                        </div>
+                                                        <ul>
+                                                            <li><i class="fas fa-clock"></i> 0min</li>
+                                                            <li><i class="fas fa-thumbs-up"></i> 0</li>
+                                                            <li><a href="flexi_course_details.php?course=$structure_id">Enroll now</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+EOT;
+                                    }
 
+                                    if ($statement->rowCount() == 0) {
+                                        echo " <div class='col-12 p-1 no_list d-none'>No courses to display</div>";
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>

@@ -8,63 +8,39 @@
     filter          : brightness(110%);
 }
 
-#header_image ul {
-    list-style : none;
-    z-index    : 100000;
-    margin-top : 30px;
-    text-align : center;
+/*index header nav*/
+#header_image .navbar {
+    background-color : transparent;
+    margin-bottom    : 100px;
 }
 
-#header_image ul > li {
-    display          : inline-block;
-    background-color : var(--main_color);
-    height           : 30px;
-    line-height      : 30px;
-    vertical-align   : middle;
+/*index header other content*/
+#header_image > div#other_content > div#div_1 {
+    color      : white;
+    text-align : center;
+    width      : 100%;
+}
+
+#header_image > div#other_content > div#div_1 > div {
     text-align       : center;
-    width            : 120px;
-
+    background-color : transparent;
 }
 
-#header_image ul > li:first-child {
-    border-bottom-left-radius : 10px;
-    border-top-left-radius    : 10px
-}
-
-#header_image ul > li:last-child {
-    border-top-right-radius    : 10px;
-    border-bottom-right-radius : 10px;
-}
-
-#header_image ul > li > a {
-    color       : white;
-    cursor      : pointer;
-    font-weight : bold;
-}
-
-#header_image ul > li > a, #header_image ul > li > a:hover {
-    text-decoration : none;
-}
-
-#header_image > div > div#div_1 > div {
-    text-align : center;
-}
-
-#header_image > div > div#div_1 > div:nth-child(1) {
+#header_image > div#other_content > div#div_1 > div:nth-child(1) {
     color       : black;
     font-size   : 200%;
     margin-top  : 50px;
     font-weight : 800;
 }
 
-#header_image > div > div#div_1 > div:nth-child(2) {
+#header_image > div#other_content > div#div_1 > div:nth-child(2) {
     color         : black;
     font-size     : 90%;
     font-weight   : 600;
     margin-bottom : 10px;
 }
 
-#header_image > div > div#div_1 > div:nth-child(3) > span {
+#header_image > div#other_content > div#div_1 > div:nth-child(3) > span, div#get_started > span {
     background-color : var(--main_color);
     padding          : 6px 14px;
     border-radius    : 14px;
@@ -74,7 +50,7 @@
     cursor           : pointer;
 }
 
-#header_image > div > div#div_2 {
+#header_image > div#other_content > div#div_2 {
     color      : white;
     position   : absolute;
     bottom     : 0;
@@ -82,12 +58,12 @@
     width      : 100%;
 }
 
-#header_image > div > div#div_2 > div:nth-child(1) {
+#header_image > div#other_content > div#div_2 > div:nth-child(1) {
     font-size   : 40px;
     font-weight : 900;
 }
 
-#header_image > div > div#div_2 > div:nth-child(2) {
+#header_image > div#other_content > div#div_2 > div:nth-child(2) {
     font-family : Karumbi, "Casteller", "Times New Roman", "Serif", "DejaVu Serif", serif;
     font-size   : 30px;
 }

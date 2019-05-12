@@ -245,7 +245,6 @@
                 $course_fee = number_format($row['course_fee'], 0);
                 $rating = get_rating($row['rating_average'], $row['rating_people']);
                 $course_highlight = $row['course_highlight'];
-                $course_highlight = strlen($course_highlight) > 100 ? substr($course_highlight, 0, 97) . '...' : $course_highlight;
 
                 $data = $data . <<<EOT
                                 <div class="col-12 col-md-6 col-lg-4">
@@ -257,13 +256,13 @@
                                             </a>
                                             <div class="price">UGX $course_fee</div>
                                             <div class="preview">
-                                                <span>Edit course details</span>
+                                                <span>Edit "$course_name"</span>
                                             </div>
                                         </figure>
                                         <div class="wrapper">
                                             <small>$category_name</small>
                                             <h3>$course_name</h3>
-                                            <p>$course_highlight</p>   
+                                            <p class="max_4">$course_highlight</p>   
                                             $rating
                                         </div>
                                         <div class="box_button">

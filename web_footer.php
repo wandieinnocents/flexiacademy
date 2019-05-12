@@ -206,6 +206,8 @@
 <!-- popper -->
 <script src='admin/files/lib/js/theia-sticky-sidebar.min.js'></script>
 
+<script src='admin/files/lib/js/ellipsis.js' type='text/javascript'></script>
+
 <script src='admin/files/lib/js/custom/scripts.js' type='text/javascript'></script>
 
 <script>
@@ -218,6 +220,8 @@
         });
 
         $('small.error').addClass('d-none');
+
+        $('p.lines_4')
 
         // WoW - animation on scroll
         const wow = new WOW(
@@ -251,7 +255,15 @@
         });
 
         new LoginRegister();
+        max_4();
     });
+
+    function max_4() {
+        const paragraps = document.getElementsByClassName('max_4');
+        for (let index = 0; index < paragraps.length; index++) {
+            $clamp(paragraps[index], {clamp: 5})
+        }
+    }
 
     class LoginRegister {
         constructor() {
@@ -282,6 +294,10 @@
                 parent.sign_out_user();
             });
 
+            $('#logout').on('click', function () {
+                parent.sign_out_user();
+            });
+
             /*   $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
                    alert('Latitude: ' + data.latitude +
                        '\nLongitude: ' + data.longitude +
@@ -291,39 +307,63 @@
 
         facebook_log_in() {
             const facebook_provider = new firebase.auth.FacebookAuthProvider();
-            facebook_provider.addScope("user_birthday");
+            //facebook_provider.addScope("user_birthday");
             facebook_provider.setCustomParameters({"display": "popup"});
+            const parent = this;
 
             firebase.auth().signInWithPopup(facebook_provider).then(function (result) {
                 // const token = result.credential.accessToken;
-                const user = result.user;
-
-                console.log(user.providerData[0].displayName)
-                console.log(user.providerData[0].photoURL)
-                console.log(user.providerData[0].email)
-                console.log(user.providerData[0].providerId)
-
+                parent.login_social(result.user);
             }).catch(function (error) {
-
+                alertify.error("Could not login");
+                console.log(error);
             });
 
         }
 
         google_login() {
             const provider = new firebase.auth.GoogleAuthProvider();
-            //provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
-            //provider.setCustomParameters({"login_hint": "user@example.com"});
+            const parent = this;
 
             firebase.auth().signInWithPopup(provider).then(function (result) {
-                console.log(result);
                 // This gives you a Google Access Token. You can use it to access the Google API.
-                const token = result.credential.accessToken;
+                // const token = result.credential.accessToken;
                 // The signed-in user info.
-                const user = result.user;
-                console.log(JSON.stringify(user));
-            }).catch(function (error) {
+                parent.login_social(result.user);
 
+            }).catch(function (error) {
+                alertify.error("Could not login");
+                console.log(error);
             });
+        }
+
+        login_social(user) {
+            const names = user.providerData[0].displayName.split(' ', 2);
+            const first_name = names.length >= 1 ? names[0] : '';
+            const last_name = names.length >= 2 ? names[1] : '';
+
+
+            const loader = new Loader("Logging in, please wait");
+            $.post("admin/files/functions/constants.php",
+                {
+                    operation: "social_sign_in",
+                    first_name: first_name,
+                    last_name: last_name,
+                    email_address: user.providerData[0].email,
+                    user_account: user.providerData[0].providerId,
+                    profile_picture: user.providerData[0].photoURL
+                },
+                function (data) {
+                    console.log(data);
+                    loader.hide_modal();
+
+                    data = JSON.parse(data);
+                    if (parseInt(data["code"]) === 1) {
+                        window.location.href = "index.php";
+                    } else {
+                        alertify.alert("System error occurred please retry");
+                    }
+                }, "text");
         }
 
         sign_out_user() {
@@ -340,13 +380,10 @@
                             loader.hide_modal();
 
                             data = JSON.parse(data);
-                            switch (parseInt(data["code"])) {
-                                case 1:
-                                    window.location.href = "index.php";
-                                    break;
-                                default:
-                                    alertify.alert("System error occurred please retry");
-                                    break;
+                            if (parseInt(data["code"]) === 1) {
+                                window.location.href = "index.php";
+                            } else {
+                                alertify.alert("System error occurred please retry");
                             }
                         }, "text");
                 }).catch(function (error) {
@@ -373,7 +410,6 @@
                         login_password: user_password
                     },
                     function (data) {
-                        console.log(data);
                         loader.hide_modal();
 
                         data = JSON.parse(data);

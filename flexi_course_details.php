@@ -1,5 +1,59 @@
 <?php
     $name = 'course_details';
+    require_once 'admin/files/functions/constants.php';
+    $connection = connect_database();
+
+    if (!isset($_GET['course'])) {
+        header('location: index.php');
+        die();
+    }
+
+
+    $statement = $connection->prepare('SELECT structure_id, category_id, course_name, course_fee, course_description, 
+                                learning_material, start_date, end_date, course_highlight, cover_image, cover_video, rating_average, 
+                                rating_people, what_you_learn, who_is_for, why_unique 
+                            FROM course_structure WHERE structure_id = :structure_id LIMIT 1');
+    $statement->bindParam(':structure_id', $_GET['course']);
+    $statement->execute();
+
+    if ($statement->rowCount() == 0) {
+        header('location: index.php');
+        die();
+    }
+
+    $data = $statement->fetch();
+    $structure_id = $data['structure_id'];
+    $course_fee = number_format($data['course_fee'], 0);
+    $start_date = empty($data['start_date']) ? 'Open' : date('d M Y');
+    $duration = '';
+    if (empty($data['start_date']) || empty($data['end_date'])) {
+        $duration = 'Open';
+    } else {
+        $duration = $data['end_date'] - $data['start_date'];
+        $duration = $data / (3600 * 24 * 30);
+        $duration = number_format($duration, 0) . ' MONTHS';
+    }
+    $course_highlight = $data['course_highlight'];
+    $course_description = $data['course_description'];
+
+
+    $module_statement = $connection->prepare('SELECT module_id, module_name, module_order, viewable 
+                                    FROM course_modules WHERE course_structure_id = :structure_id ORDER BY module_order');
+
+    $sub_statement = $connection->prepare('SELECT sub_module_id, sub_module_name, viewable, sub_module_order 
+                                    FROM course_sub_modules WHERE module_id = :module_id ORDER BY sub_module_order');
+
+    $module_statement->bindParam(':structure_id', $structure_id);
+    $module_statement->execute();
+
+    $data = [];
+    foreach ($module_statement->fetchAll() as $module_row) {
+        $sub_statement->bindParam(':module_id', $module_row['module_id']);
+        $sub_statement->execute();
+
+        $module_row['sub_modules'] = $sub_statement->fetchAll();
+        $data[] = $module_row;
+    }
 ?>
 
 <!DOCTYPE html>
@@ -21,42 +75,24 @@
                         <div class='col-12 col-lg-8 px-lg-4 p-1'>
                             <div class="box_highlight">
                                 <ul class="additional_info">
-                                    <li><i class="fas fa-clock fa-2x"></i>Course Duration<strong>3 Years</strong></li>
-                                    <li><i class="fas fa-calendar-day fa-2x"></i>Course Start<strong>10 Sept. 2017</strong></li>
-                                    <li><i class="fas fa-wallet fa-2x"></i>Course Fee<strong>2900 USD</strong></li>
+                                    <li><i class="fas fa-clock fa-2x"></i>Course Duration<strong><?php echo $duration ?></strong></li>
+                                    <li><i class="fas fa-calendar-day fa-2x"></i>Course Start<strong><?php echo $start_date ?></strong></li>
+                                    <li><i class="fas fa-wallet fa-2x"></i>Course Fee<strong><?php echo $course_fee ?> UGX</strong></li>
                                 </ul>
                             </div>
 
-                            <!-- /box_highlight -->
+                            <h2>Course Highlight</h2>
+                            <div id="course_highlight" class="mb-5"><?php echo $course_highlight ?></div>
+
+
                             <h2>Description</h2>
-                            <p>Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris <strong>eloquentiam sed</strong>.
-                                Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei
-                                timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam
-                                <strong>vulputate</strong> pertinacia eum at.</p>
-                            <p>Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei
-                                timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam
-                                vulputate pertinacia eum at.</p>
-                            <div class="row mx-0">
-                                <div class="col-lg-6">
-                                    <ul class="bullets">
-                                        <li>Dolorem mediocritatem</li>
-                                        <li>Mea appareat</li>
-                                        <li>Prima causae</li>
-                                        <li>Singulis indoctum</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <ul class="bullets">
-                                        <li>Timeam inimicus</li>
-                                        <li>Oportere democritum</li>
-                                        <li>Cetero inermis</li>
-                                        <li>Pertinacia eum</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <?php
+                                //ul = bullets
+                                echo $course_description;
+                            ?>
                             <hr/>
 
-                            <h5>What will you learn</h5>
+                            <h2>What will you learn</h2>
                             <ul class="list_ok">
                                 <li>
                                     <h6>Suas summo id sed erat erant oporteat</h6>
@@ -80,129 +116,60 @@
                                 <div class="intro_title">
                                     <h2>Lessons</h2>
                                     <ul>
-                                        <li>18 lessons</li>
-                                        <li>01:02:10</li>
+                                        <li><?php echo count($data) ?> lessons</li>
+                                        <li>0 hrs</li>
                                     </ul>
                                 </div>
+
                                 <div id="accordion_lessons" role="tablist" class="mb-5">
-                                    <div class="card">
-                                        <div class="card-header" role="tab" id="headingOne">
-                                            <h5 class="mb-0">
-                                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true"
-                                                   aria-controls="collapseOne"><i class="indicator ti-minus"></i> Introdocution</a>
-                                            </h5>
-                                        </div>
+                                    <?php
+                                        $html = '';
+                                        $index = 0;
+                                        foreach ($data as $datum) {
+                                            $index = $index + 1;
+                                            $collapse = 'collapse_' . $index;
+                                            $heading = 'heading_' . $index;
+                                            $module_name = $datum['module_name'];
 
-                                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne"
-                                             data-parent="#accordion_lessons">
-                                            <div class="card-body">
-                                                <div class="list_lessons">
-                                                    <ul>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health
-                                                                Science</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health and
-                                                                Social Care</a><span>00:59</span></li>
-                                                        <li><a href="#" class="txt_doc">Audiology</a><span>00:59</span></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /card -->
-                                    <div class="card">
-                                        <div class="card-header" role="tab" id="headingTwo">
-                                            <h5 class="mb-0">
-                                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
-                                                   aria-controls="collapseTwo">
-                                                    <i class="indicator ti-plus"></i>Generative Modeling Review
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                                             data-parent="#accordion_lessons">
-                                            <div class="card-body">
-                                                <div class="list_lessons">
-                                                    <ul>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health
-                                                                Science</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health and
-                                                                Social Care</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw"
-                                                               class="video">History</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Healthcare
-                                                                Science</a><span>00:59</span></li>
-                                                        <li><a href="#" class="txt_doc">Audiology</a><span>00:59</span></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /card -->
-                                    <div class="card">
-                                        <div class="card-header" role="tab" id="headingThree">
-                                            <h5 class="mb-0">
-                                                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false"
-                                                   aria-controls="collapseThree">
-                                                    <i class="indicator ti-plus"></i>Variational Autoencoders
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
-                                             data-parent="#accordion_lessons">
-                                            <div class="card-body">
-                                                <div class="list_lessons">
-                                                    <ul>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health
-                                                                Science</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health and
-                                                                Social Care</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw"
-                                                               class="video">History</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Healthcare
-                                                                Science</a><span>00:59</span></li>
-                                                        <li><a href="#" class="txt_doc">Audiology</a><span>00:59</span></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /card -->
+                                            $html = $html . <<<EOT
+                                                <div class="card">
+                                                    <div class="card-header" role="tab" id="$heading">
+                                                        <h5 class="mb-0">
+                                                            <a data-toggle="collapse" href="#$collapse" aria-expanded="true"
+                                                               aria-controls="$collapse"><i class="indicator ti-minus"></i> $module_name</a>
+                                                        </h5>
+                                                    </div>
+            
+                                                    <div id="$collapse" class="collapse show" role="tabpanel" aria-labelledby="$heading"
+                                                         data-parent="#accordion_lessons">
+                                                        <div class="card-body">
+                                                            <div class="list_lessons">
+                                                                <ul>
+EOT;
+                                            foreach ($datum['sub_modules'] as $sub_module){
+                                                $time = 'Unknown time';
+                                                $sub_module_name = $sub_module['sub_module_name'];
+                                                $html = $html . <<<EOT
+                                                    <li><a href="javascript:void()" class="">$sub_module_name</a><span>$time</span></li>
+EOT;
+                                            }
 
-                                    <div class="card">
-                                        <div class="card-header" role="tab" id="headingFourth">
-                                            <h5 class="mb-0">
-                                                <a class="collapsed" data-toggle="collapse" href="#collapseFourth" aria-expanded="false"
-                                                   aria-controls="collapseFourth">
-                                                    <i class="indicator ti-plus"></i>Gaussian Mixture Model Review
-                                                </a>
-                                            </h5>
-                                        </div>
-                                        <div id="collapseFourth" class="collapse" role="tabpanel" aria-labelledby="headingFourth"
-                                             data-parent="#accordion_lessons">
-                                            <div class="card-body">
-                                                <div class="list_lessons">
-                                                    <ul>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health
-                                                                Science</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">Health and
-                                                                Social Care</a><span>00:59</span></li>
-                                                        <li><a href="https://www.youtube.com/watch?v=LDgd_gUcqCw"
-                                                               class="video">History</a><span>00:59</span></li>
-                                                        <li>
-                                                            <a href="https://www.youtube.com/watch?v=LDgd_gUcqCw" class="video">
-                                                                HealthCare Science</a><span>00:59</span>
-                                                        </li>
-                                                        <li><a href="#" class="txt_doc">Audiology</a><span>00:59</span></li>
-                                                    </ul>
+                                            $html = $html . <<<EOT
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- /card -->
+EOT;
+
+                                        }
+
+                                        echo $html;
+                                    ?>
                                 </div>
                             </section>
 
-                            <section id="reviews">
+                            <section id="reviews" class="d-none">
                                 <h2>Reviews</h2>
                                 <div class="reviews-container">
                                     <div class="row">
@@ -381,7 +348,7 @@
 
                                 <hr/>
                                 <h4>Enquire now</h4>
-                                <p>Ex quem dicta delicata usu, zril vocibus maiestatis in qui.</p>
+                                <p class="d-none">Ex quem dicta delicata usu, zril vocibus maiestatis in qui.</p>
                                 <form>
                                     <div class='form-row form-group mx-0'>
                                         <input class='form-control form-control-sm' type='text' placeholder='Full name'>

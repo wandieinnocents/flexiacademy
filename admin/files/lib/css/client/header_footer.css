@@ -9,6 +9,33 @@
     margin-bottom    : 100px;
 }
 
+.navbar div#header_user .dropdown-toggle::after {
+    display : none;
+}
+
+#header_image .navbar div#header_user .dropdown-toggle div {
+    color  : var(--main_color);
+    cursor : pointer;
+}
+
+.navbar div#header_user .dropdown-toggle div {
+    color  : var(--white);
+    cursor : pointer;
+}
+
+.navbar div#header_user .dropdown-toggle div:nth-child(1) {
+    font-weight     : 900;
+    font-size       : 110%;
+    text-decoration : underline;
+    margin-bottom   : -2px;
+}
+
+.navbar div#header_user .dropdown-toggle div:nth-child(2) {
+    font-weight : 800;
+    font-style  : italic;
+    font-size   : 90%;
+}
+
 .navbar .nav-item {
     background  : white;
     margin-left : 10px;
