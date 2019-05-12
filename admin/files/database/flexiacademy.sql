@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 03, 2019 at 10:04 PM
+-- Generation Time: May 12, 2019 at 09:30 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.1.26
 
@@ -65,7 +65,11 @@ INSERT INTO `course_modules` (`module_id`, `course_structure_id`, `module_name`,
 (2, 1, 'This is my next module', '', 2, 1),
 (3, 1, 'And the thirs shall be like this', '', 3, 1),
 (4, 1, 'This shall be implemented', '', 4, 0),
-(5, 1, 'This shall be implemented next', '', 5, 0);
+(5, 1, 'This shall be implemented next', '', 5, 0),
+(6, 2, 'hhhhhhhhhhhhhh', '', 1, 1),
+(7, 2, 'rrrrrrrrrrrrrrr', '', 2, 1),
+(8, 2, 'iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii', '', 3, 1),
+(9, 2, 'nnnnnnnnnnnnnnnnnnnnnnnn', '', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -98,7 +102,7 @@ CREATE TABLE `course_structure` (
 
 INSERT INTO `course_structure` (`structure_id`, `category_id`, `course_name`, `course_fee`, `course_description`, `learning_material`, `start_date`, `end_date`, `course_highlight`, `cover_image`, `cover_video`, `rating_average`, `rating_people`, `what_you_learn`, `who_is_for`, `why_unique`) VALUES
 (1, 1, 'Course one', 500000, '<p><strong>If you require IE8-9 support, use Bootstrap 3.</strong> It is the most stable version of Bootstrap, and it is still supported by the team for critical bugfixes and documentation changes. However, new features will NOT be added to it.</p>\n\n<p>We have created a responsive starter template with <strong>Bootstrap 4.</strong> You are free to modify, save, share, and use it in your projects:</p>\n\n<ol start=\"1\">\n	<li>\n	<p>W3.CSS is an excellent alternative to Bootstrap 4.</p>\n	</li>\n	<li>\n	<p>W3.CSS is smaller, faster, and easier to use.</p>\n	</li>\n	<li>\n	<p>If you want to learn W3.CSS, go to our W3.CSS Tutorial.</p>\n	</li>\n</ol>', '{\"video_tutorials\":1,\"document_resources\":1,\"mobile_access\":1,\"course_certificate\":0,\"course_assignments\":0}', 1556236800, 0, 'This is my description that i need to appear on the description part and if its is so long more than 100 characters it shall be automatically truncated', 'img_1556702473.JPG', '', 0, 0, '<p>In this course you shall learn how to;</p>\n\n<ol>\n	<li>Preapare a list</li>\n	<li>Arrange data</li>\n	<li>The third component</li>\n	<li>This shall be awsome</li>\n	<li>Then you shall be superb</li>\n	<li>And this shall be more great</li>\n</ol>\n\n<p>This shall put you ata alevel far more beyound the optimum in the work industry at hand</p>', '<p>This course is for some one who</p>\n\n<ol>\n	<li>Wants to be perfect in this course.</li>\n	<li>Has limitted time to go to class</li>\n	<li>Has no knowlege on this course</li>\n</ol>', '<p>This course is unique because:</p>\n\n<ol>\n	<li>It is unique</li>\n	<li>It is complete</li>\n	<li>It is different from others</li>\n	<li>It is simple to understand</li>\n</ol>'),
-(2, 2, 'My second couse', 250000, '', '{}', 1559347200, 1567209600, 'The height of the progress bar is 16px by default. Use the CSS height property to change it. Note that you must set the same height for the progress container and the progress bar:', 'img_1556703590.jpg', '', 0, 0, '{}', NULL, NULL);
+(2, 2, 'My second couse', 250000, '<p>Very often, especially on small screens, you want to hide the navigation links and replace them with a button that should reveal them when clicked on.</p>\n\n<p>To create a collapsible navigation bar, use a button with <strong>class=&quot;navbar-toggler&quot;</strong>, <strong>data-toggle=&quot;collapse&quot;</strong> and data-<strong>target=&quot;#<em>thetarget</em>&quot;</strong>. Then wrap the navbar content (links, etc) inside a div element with class=&quot;collapse navbar-collapse&quot;, followed by an id that matches the data-target of the button: &quot;<em>thetarget</em>&quot;.</p>', '{\"video_tutorials\":1,\"document_resources\":0,\"mobile_access\":0,\"course_certificate\":1,\"course_assignments\":1}', 1559347200, 1567209600, 'The height of the progress bar is 16px by default. Use the CSS height property to change it. Note that you must set the same height for the progress container and the progress bar:', 'img_1557663054.jpg', '', 0, 0, '<p>When using the .navbar-brand class on images, Bootstrap 4 will automatically style the image to fit the navbar vertically.</p>\n\n<ol>\n	<li>\n	<p>A sticky navigation bar.</p>\n	</li>\n	<li>\n	<p>Stays fixed at the top of the page when you scroll past it.</p>\n	</li>\n	<li>\n	<p>Scroll this page to see the effect.</p>\n	</li>\n	<li>\n	<p><strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>\n	</li>\n</ol>', '<ol>\n	<li>\n	<p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>\n	</li>\n	<li>\n	<p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>\n	</li>\n	<li>\n	<p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>\n	</li>\n	<li>\n	<p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>\n	</li>\n</ol>', '<ol>\n	<li>HTML Reference</li>\n	<li>CSS Reference</li>\n	<li>JavaScript Reference</li>\n	<li>SQL Reference</li>\n	<li>Python Reference</li>\n	<li>W3.CSS Reference</li>\n	<li>Bootstrap Reference</li>\n	<li>PHP Reference</li>\n	<li>HTML Colors</li>\n	<li>jQuery Reference</li>\n	<li>Angular Reference</li>\n	<li>Java Reference</li>\n</ol>');
 
 -- --------------------------------------------------------
 
@@ -133,7 +137,21 @@ INSERT INTO `course_sub_modules` (`sub_module_id`, `module_id`, `sub_module_name
 (11, 4, 'Nicessst', '', 1, 1),
 (12, 4, 'Yeahd', '', 2, 1),
 (13, 4, 'Nicessst', '', 1, 1),
-(14, 4, 'Yeahd', '', 2, 1);
+(14, 4, 'Yeahd', '', 2, 1),
+(15, 6, 'nnnnnnnnnnnnnnnnnnnn', '', 1, 1),
+(16, 6, '77777777777777777', '', 2, 1),
+(17, 6, '999999999999999999999999999', '', 3, 1),
+(18, 6, '0000000000000000000', '', 4, 1),
+(19, 7, '333333333333333333333333333', '', 1, 1),
+(20, 7, '999999999999oooooooooooooo', '', 2, 1),
+(21, 7, '[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[', '', 3, 1),
+(22, 7, '55555555555555555555555555', '', 4, 1),
+(23, 7, '3333333333333333333333333', '', 5, 1),
+(24, 8, '6666666666666666666', '', 1, 1),
+(25, 8, '999999999999999999999', '', 2, 1),
+(26, 8, 'pppppppppppppppppppppp', '', 3, 1),
+(27, 8, '9999999999999999999999999', '', 4, 1),
+(28, 8, '777777777777777777777777777', '', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -161,7 +179,8 @@ CREATE TABLE `table_users` (
 --
 
 INSERT INTO `table_users` (`user_id`, `first_name`, `last_name`, `user_name`, `date_of_birth`, `email_address`, `mobile_contact`, `user_password`, `password_salt`, `user_account`, `user_roles`, `profile_picture`) VALUES
-(1, 'William', 'Pande', 'WilliamPande', 755038800, 'pandewilliam100@gmail.com', '256703683125', '38c7b7edc5b60dc682db806dddcd16530764743a91dc4fa8ac53f09b6c8c68e40b1e9e54ce3231594cb6c0eb13c444fead010a6be7b72443c9302ed6aed6cfc8', 'c40050c8f8323ecb6256de6089444c4c79dd778d84c35dec469592031075395d43920693456968b1e61493cca1402f0c61d78257cb39402a9779aebfe45260a2', 'flexi_account', '{\"student\":1}', '');
+(1, 'William', 'Pande', 'WilliamPande', 755038800, 'pandewilliam100@gmail.com', '256703683125', '', '', 'google.com', '{\"student\":1}', 'https://lh5.googleusercontent.com/-HOMEeRxBWrY/AAAAAAAAAAI/AAAAAAAAADk/nU98XKFlJRw/photo.jpg'),
+(2, 'William', 'Pande', '', -100000000000, 'pande.william67@gmail.com', '', '', '', 'facebook.com', '{\"student\":1}', 'https://graph.facebook.com/1446470715487783/picture');
 
 -- --------------------------------------------------------
 
@@ -234,7 +253,7 @@ ALTER TABLE `course_categories`
 -- AUTO_INCREMENT for table `course_modules`
 --
 ALTER TABLE `course_modules`
-  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `course_structure`
@@ -246,13 +265,13 @@ ALTER TABLE `course_structure`
 -- AUTO_INCREMENT for table `course_sub_modules`
 --
 ALTER TABLE `course_sub_modules`
-  MODIFY `sub_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `sub_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `table_users`
 --
 ALTER TABLE `table_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `user_sessions`
