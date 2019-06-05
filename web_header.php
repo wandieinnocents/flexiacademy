@@ -13,7 +13,7 @@
             $email_address = $_SESSION['email_address'];
             $profile_picture = 'admin/files/images/avators/';
             if (empty($_SESSION['profile_picture'])) {
-                $profile_picture = $profile_picture . 'user_avator.png';
+                $profile_picture = $profile_picture . 'user_avatar.png';
             } else {
                 if ($_SESSION['user_account'] == 'google.com') {
                     $profile_picture = $_SESSION['profile_picture'];

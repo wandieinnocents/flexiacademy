@@ -344,7 +344,7 @@
 
 
             const loader = new Loader("Logging in, please wait");
-            $.post("admin/files/functions/constants.php",
+            $.post("admin/files/functions/api/account/login_user.php",
                 {
                     operation: "social_sign_in",
                     first_name: first_name,
@@ -371,7 +371,7 @@
                 firebase.auth().signOut().then(function () {
                     // Sign-out successful.
                     const loader = new Loader("Logging in, please wait");
-                    $.post("admin/files/functions/constants.php",
+                    $.post("admin/files/functions/api/account/log_out.php",
                         {
                             operation: "logout_user",
                         },
@@ -403,7 +403,7 @@
                 alertify.alert("Password must at least be 6 characters");
             } else {
                 const loader = new Loader("Logging in, please wait");
-                $.post("admin/files/functions/constants.php",
+                $.post("admin/files/functions/api/account/login_user.php",
                     {
                         operation: "login_user",
                         credential: credential,
@@ -457,9 +457,8 @@
                         } else {
                             const loader = new Loader("Creating account, please wait");
 
-                            $.post("admin/files/functions/constants.php",
+                            $.post("admin/files/functions/api/account/create_account.php",
                                 {
-                                    operation: "create_account",
                                     first_name: first_name,
                                     last_name: last_name,
                                     user_name: user_name,
@@ -531,7 +530,7 @@
 
             const progress_bar = $("#progress_bar");
 
-            const completed = parseInt((loaded / total) * 100);
+            const completed = (loaded / total) * 100;
             if (completed === 100) {
                 progress_bar.css("width", "100%");
                 progress_bar.html("");
@@ -540,9 +539,9 @@
                 progress_bar.css("width", completed + "%");
                 progress_bar.html(completed + "%");
                 let loaded_text = (loaded / 1024);
-                loaded_text = loaded_text > 1024 ? (loaded_text / 1024).toFixed(2) + "mbs" : parseInt(loaded_text) + "kbs";
+                loaded_text = loaded_text > 1024 ? (loaded_text / 1024).toFixed(2) + "mbs" : loaded_text + "kbs";
                 let total_text = (total / 1024);
-                total_text = total_text > 1024 ? (total_text / 1024).toFixed(2) + "mbs" : parseInt(total_text) + "kbs";
+                total_text = total_text > 1024 ? (total_text / 1024).toFixed(2) + "mbs" : total_text + "kbs";
                 progress_bar.html("Uploading, " + loaded_text + " of " + total_text);
             }
         }

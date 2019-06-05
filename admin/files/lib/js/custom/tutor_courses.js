@@ -247,8 +247,8 @@ class MultiForm {
             if (parseInt(parent.structure_id.val()) > 0) {
                 const loader = new Loader("Fetching course list, please wait");
 
-                $.post("admin/files/functions/functions.php",
-                    {operation: "get_course_data", structure_id: parent.structure_id.val()}, function (data) {
+                $.post("admin/files/functions/api/tutor/get_course_data.php",
+                    {structure_id: parent.structure_id.val()}, function (data) {
 
                         data = JSON.parse(data);
 
@@ -346,8 +346,8 @@ class MultiForm {
 
     get_tutor_courses() {
         const loader = new Loader("Fetching course list, please wait");
-        $.post("admin/files/functions/functions.php",
-            {operation: "get_tutor_courses"}, function (data) {
+        $.post("admin/files/functions/api/tutor/get_tutor_courses.php",
+            {}, function (data) {
                 loader.hide_modal();
                 $('#tutor_data').html(data);
                 max_4();
@@ -526,9 +526,8 @@ class MultiForm {
             } else if (this.current_tab === 1) {
                 const loader = new Loader("Saving course structure, please wait");
 
-                $.post("admin/files/functions/functions.php",
+                $.post("admin/files/functions/api/tutor/save_course_structure.php",
                     {
-                        operation: "save_course_structure",
                         structure_id: parent.structure_id.val(),
                         course_name: course_name,
                         category_name: category_name,
@@ -559,7 +558,6 @@ class MultiForm {
                 );
             } else if (this.current_tab === 2) {
                 const form_data = new FormData();
-                form_data.append("operation", "save_cover_photo");
                 form_data.append("structure_id", parent.structure_id.val());
                 form_data.append("cover_image", cover_image[0].files[0]);
 
@@ -576,7 +574,7 @@ class MultiForm {
                         }, false);
                         return xhr;
                     },
-                    url: "admin/files/functions/functions.php", type: "POST", data: form_data,
+                    url: "admin/files/functions/api/tutor/save_cover_photo.php", type: "POST", data: form_data,
                     async: true, cache: false, contentType: false, processData: false,
                     success: function (response) {
                         loader.hide_modal();
@@ -613,9 +611,8 @@ class MultiForm {
             } else if (this.current_tab === 8) {
                 const loader = new Loader("Saving course modules, please wait");
 
-                $.post("admin/files/functions/functions.php",
+                $.post("admin/files/functions/api/tutor/save_course_modules.php",
                     {
-                        operation: "save_course_modules",
                         structure_id: parent.structure_id.val(),
                         modules: JSON.stringify(modules)
 
@@ -643,9 +640,8 @@ class MultiForm {
 
                 const loader = new Loader("Saving course sub modules, please wait");
 
-                $.post("admin/files/functions/functions.php",
+                $.post("admin/files/functions/api/tutor/save_sub_modules.php",
                     {
-                        operation: "save_sub_modules",
                         structure_id: parent.structure_id.val(),
                         modules: JSON.stringify(parent.modules)
 
@@ -678,7 +674,7 @@ class MultiForm {
         const loader = new Loader("Saving course information, please wait");
         const parent = this;
 
-        $.post("admin/files/functions/functions.php",
+        $.post("admin/files/functions/api/tutor/save_misc_data.php",
             {
                 operation: operation,
                 structure_id: parent.structure_id.val(),
