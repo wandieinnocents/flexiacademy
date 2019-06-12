@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row mx-0 py-5">
             <div class="col-12 col-md-6 p-1">
-                <p><img src="admin/files/images/images/logo.png" width="149" height="42" data-retina="true" alt=""></p>
+                <p>
+                    <img src="admin/files/images/images/logo.png" width="149" height="42" data-retina="true" alt="">
+                </p>
                 <p class='mt-4'>
                     Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea. Id placerat tacimates definitionem sea, prima quidam vim
                     no. Duo nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus expetendis vis.
@@ -11,11 +13,21 @@
                 <div class="follow_us">
                     <ul>
                         <li>Follow us</li>
-                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -23,20 +35,36 @@
             <div class="col-6 col-md-3 p-1">
                 <h5>Useful links</h5>
                 <ul class="links">
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">News &amp; Events</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li>
+                        <a href="#">Admission</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                    <li>
+                        <a href="#">News &amp; Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="col-6 col-md-3 p-1">
                 <h5>Contact with Us</h5>
                 <ul class="contacts">
-                    <li><a href="tel://61280932400"><i class="fas fa-phone-square"></i> + 61 23 8093 3400</a></li>
-                    <li><a href="mailto:info@udema.com"><i class="fas fa-envelope-square"></i> info@udema.com</a></li>
+                    <li>
+                        <a href="tel://61280932400"><i class="fas fa-phone-square"></i> + 61 23 8093 3400</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@udema.com"><i class="fas fa-envelope-square"></i> info@udema.com</a>
+                    </li>
                 </ul>
                 <div id="newsletter">
                     <h6>Newsletter</h6>
@@ -56,8 +84,12 @@
 
             <div class="col-md-8">
                 <ul id="additional_links">
-                    <li><a href="#">Terms and conditions</a></li>
-                    <li><a href="#">Privacy</a></li>
+                    <li>
+                        <a href="#">Terms and conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
                 </ul>
             </div>
 
@@ -121,7 +153,8 @@
                         </div>
                     </div>
                     <div class='text-center mt-3'>
-                        Already have a FlexiStudy account? <strong><span id='button_login'>Login!</span></strong>
+                        Already have a FlexiStudy account?
+                        <strong><span id='button_login'>Login!</span></strong>
                     </div>
                 </form>
                 <form id='login_form'>
@@ -150,7 +183,8 @@
                             </div>
                         </div>
                         <div class='text-center mt-3'>
-                            New to FlexiStudy? <strong><span id='button_register'>Create Account</span></strong>
+                            New to FlexiStudy?
+                            <strong><span id='button_register'>Create Account</span></strong>
                         </div>
                     </div>
                 </form>
@@ -421,6 +455,12 @@
                                 alertify.alert("No account found that matches given credentials");
                                 break;
                             case 3:
+                                alertify.alert("This account was last logged in using \"GOOGLE\" please use google sign in to login using specified credentials");
+                                break;
+                            case 4:
+                                alertify.alert("This account was last logged in using \"FACEBOOK\" please use facebook sign in to login using specified credentials");
+                                break;
+                            case 5:
                                 alertify.alert("Password does not match account credentials");
                                 break;
                             default:

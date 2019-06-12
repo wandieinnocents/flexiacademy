@@ -33,8 +33,18 @@
 
             $data = $statement->fetch();
 
-            if ((hash('sha512', $_POST['login_password'] . $data['password_salt']) != $data['user_password'])) {
+            if($data['user_account'] == 'google.com'){
                 echo json_encode(['code' => 3]);
+                die();
+            }
+
+            if($data['user_account'] == 'facebook.com'){
+                echo json_encode(['code' => 4]);
+                die();
+            }
+
+            if ((hash('sha512', $_POST['login_password'] . $data['password_salt']) != $data['user_password'])) {
+                echo json_encode(['code' => 5]);
                 die();
             }
 
@@ -47,11 +57,11 @@
         }
 
         private function social_sign_in() {
-            $statement = $this->connection->prepare('SELECT user_id FROM table_users WHERE  email_address = :email_address');
+            $statement = $this->connection->prepare('SELECT user_id FROM table_users WHERE  email_address = :email_address LIMIT 1');
             $statement->bindParam(':email_address', $_POST['email_address']);
             $statement->execute();
 
-            if ($statement->rowCount() > 0) {
+            if ($statement->rowCount() == 1) {
                 $user_id = ($statement->fetch())['user_id'];
 
                 $statement = $this->connection->prepare("UPDATE table_users SET first_name = :first_name, last_name = :last_name,
