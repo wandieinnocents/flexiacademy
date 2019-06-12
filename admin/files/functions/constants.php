@@ -11,13 +11,12 @@
 
     /*define("username", "william");
     define("password", "dev2525");
-    define("host", "localhost");
     define("dbname", "flexiacademy");*/
 
 
     define("username", "digitalr_digital");
     define("password", "MNPnXdX3q9A8");;
-    define("database", "digitalr_flexi");
+    define("dbname", "digitalr_flexi");
 
 
     function connect_database() {
