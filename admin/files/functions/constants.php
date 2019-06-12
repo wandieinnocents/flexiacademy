@@ -6,10 +6,19 @@
       print_r($browser);*/
 
     date_default_timezone_set('Africa/Kampala');
-    define("username", "william");
+
+    define("host", "localhost");
+
+    /*define("username", "william");
     define("password", "dev2525");
     define("host", "localhost");
-    define("dbname", "flexiacademy");
+    define("dbname", "flexiacademy");*/
+
+
+    define("username", "digitalr_digital");
+    define("password", "MNPnXdX3q9A8");;
+    define("database", "digitalr_flexi");
+
 
     function connect_database() {
         $options = [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'];
