@@ -29,7 +29,7 @@
         $password_salt = hash('sha512', uniqid(mt_rand(1, mt_getrandmax()), true));
         $user_password = hash('sha512', $_POST['user_password'] . $password_salt);
         $date_of_birth = strtotime($_POST['date_of_birth']);
-        $user_roles = ['student' => 1];
+        $user_roles = ['student' => 1, 'tutor' => 0, 'admin' => 0];
         $user_roles = json_encode($user_roles);
         $user_account = 'flexi_account';
 
@@ -45,6 +45,16 @@
         $statement->bindParam(':user_account', $user_account);
         $statement->execute();
 
+        $user_id = $connection->lastInsertId();
+        $statement = $connection->prepare('SELECT * FROM table_users WHERE  user_id = :user_id LIMIT 1');
+        $statement->bindParam(':user_id', $user_id);
+        $statement->execute();
+
+        $data = $statement->fetch();
+        $data['code'] = 1;
+        unset($data['user_password']);
+        unset($data['password_salt']);
+
         $connection = null;
-        echo json_encode(['code' => 1]);
+        echo json_encode($data);
     }

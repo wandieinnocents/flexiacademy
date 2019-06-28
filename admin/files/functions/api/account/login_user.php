@@ -82,6 +82,8 @@
                 $data = $statement->fetch();
                 if (isset($_POST['mobile'])) {
                     $data['code'] = 1;
+                    unset($data['user_password']);
+                    unset($data['password_salt']);
                     echo json_encode($data);
                 } else {
                     $this->finalise_login($data);
@@ -92,7 +94,9 @@
                          email_address, mobile_contact, user_password, password_salt, user_account, user_roles, profile_picture) 
                             VALUES (:first_name, :last_name, '', -100000000000, :email_address, '', '', '', :user_account, :user_roles,
                                     :profile_picture)");
-                $user_roles = json_encode(['student' => 1]);
+
+                $user_roles = json_encode(['student' => 1, 'tutor' => 0, 'admin' => 0]);
+
                 $statement->bindParam(':first_name', $_POST['first_name']);
                 $statement->bindParam(':last_name', $_POST['last_name']);
                 $statement->bindParam(':email_address', $_POST['email_address']);
@@ -109,6 +113,8 @@
 
                 if (isset($_POST['mobile'])) {
                     $data['code'] = 1;
+                    unset($data['user_password']);
+                    unset($data['password_salt']);
                     echo json_encode($data);
                 } else {
                     $this->finalise_login($data);
