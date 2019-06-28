@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/account/create_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/account/create_account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/account/login_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/account/login_user.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +49,7 @@
         <item name="flexiacademy@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flexiacademy: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="table_users: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="course_structure: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -90,16 +89,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/create_account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
+            <state relative-caret-position="792">
               <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="-117">
               <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
             </state>
           </provider>
@@ -199,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user_registration.php" />
         <option value="$PROJECT_DIR$/admin/sys_header.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/box.css" />
         <option value="$PROJECT_DIR$/web_sidebar_nav.php" />
@@ -250,6 +257,7 @@
         <option value="$PROJECT_DIR$/admin/files/functions/constants.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/account/login_user.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/account/create_account.php" />
+        <option value="$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php" />
       </list>
     </option>
   </component>
@@ -276,56 +284,6 @@
             <path>
               <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
               <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="avatars" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -448,7 +406,7 @@
       <workItem from="1560305272850" duration="44000" />
       <workItem from="1560317298821" duration="2163000" />
       <workItem from="1561657747307" duration="3089000" />
-      <workItem from="1561685992884" duration="3319000" />
+      <workItem from="1561685992884" duration="5899000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -527,11 +485,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560318346016</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Mobile enabling">
+      <created>1561701614211</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1561701614226</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317222000" />
+    <option name="totallyTimeSpent" value="319802000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,7 +509,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="860" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -572,7 +536,7 @@
       <window_info anchor="right" id="SciView" order="1" weight="0.32980332" />
       <window_info anchor="right" id="Plugins" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.25804377" />
+      <window_info anchor="right" id="Database" order="4" weight="0.19433719" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -598,13 +562,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/ckeditor/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -861,17 +818,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/create_account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="792">
           <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="252">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>
