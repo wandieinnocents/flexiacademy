@@ -11,16 +11,16 @@
         $response['categories'] = $statement->fetchAll();
 
         $statement = $connection->prepare("SELECT * FROM course_structure WHERE  user_id = :user_id");
-        $statement->bindParam(':user_id', $user_id);
+        $statement->bindParam(':user_id', $_GET['user_id']);
         $statement->execute();
-        $response['structures'] = $statement->fetchAll();
+        $structures = $statement->fetchAll();
 
         $modules = [];
         $sub_modules = [];
         $module_statement = $connection->prepare("SELECT * FROM course_modules 
                     WHERE course_structure_id = :course_structure_id");
 
-        foreach ($response['structures'] as $structure) {
+        foreach ($structures as $structure) {
             $course_structure_id = $structure['structure_id'];
             $module_statement->bindParam(':course_structure_id', $course_structure_id);
             $module_statement->execute();
@@ -35,7 +35,9 @@
         }
 
         $connection = null;
+        $response['structures'] = $structures;
         $response['modules'] = $modules;
         $response['sub_modules'] = $sub_modules;
+
         echo json_encode($response);
     }
