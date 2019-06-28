@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses_app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,7 +49,7 @@
         <item name="flexiacademy@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flexiacademy: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="course_structure: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="course_sub_modules: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -71,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
+            <state relative-caret-position="8127">
               <caret line="387" column="66" selection-start-line="387" selection-start-column="58" selection-end-line="387" selection-end-column="66" />
             </state>
           </provider>
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/login_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="116" column="50" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="116" selection-end-column="50" />
+            <state relative-caret-position="2436">
+              <caret line="116" column="50" selection-start-line="115" selection-start-column="19" selection-end-line="116" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -89,17 +89,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/create_account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="595">
               <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
+        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses_app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="756">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -107,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="378">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -207,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/sys_header.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/box.css" />
         <option value="$PROJECT_DIR$/web_sidebar_nav.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/elegant_fonts.css" />
@@ -258,6 +257,7 @@
         <option value="$PROJECT_DIR$/admin/files/functions/api/account/login_user.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/account/create_account.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php" />
+        <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses_app.php" />
       </list>
     </option>
   </component>
@@ -276,8 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,10 +283,71 @@
               <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
               <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="courses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="tutor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="pictures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,7 +465,8 @@
       <workItem from="1560305272850" duration="44000" />
       <workItem from="1560317298821" duration="2163000" />
       <workItem from="1561657747307" duration="3089000" />
-      <workItem from="1561685992884" duration="5899000" />
+      <workItem from="1561685992884" duration="7359000" />
+      <workItem from="1561737170575" duration="3310000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -492,11 +552,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561701614226</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Mobile enabling">
+      <created>1561708325270</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561708325270</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Showing data on home page">
+      <created>1561709421484</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561709421484</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319802000" />
+    <option name="totallyTimeSpent" value="324572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,13 +583,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="860" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22844273" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23166023" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -555,20 +630,14 @@
     <MESSAGE value="Version update on 12 May 2019" />
     <MESSAGE value="Mobile enabing" />
     <MESSAGE value="Mobile enabling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mobile enabling" />
+    <MESSAGE value="Showing data on home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Showing data on home page" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/courses.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -771,15 +840,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://ac45a0c6-2801-443c-a05e-337deeee3dde/schema/flexiacademy/table/table_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="1d9b782a-f9ec-4c35-aa61-1a2e2f24d12d">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://ac45a0c6-2801-443c-a05e-337deeee3dde/schema/flexiacademy/table/table_users" />
     <entry file="file://$PROJECT_DIR$/admin/files/images/avatars/user_avatar.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -787,6 +848,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="58" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8127">
+          <caret line="387" column="66" selection-start-line="387" selection-start-column="58" selection-end-line="387" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/login_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2436">
+          <caret line="116" column="50" selection-start-line="115" selection-start-column="19" selection-end-line="116" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -804,38 +886,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_footer.php">
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="387" column="66" selection-start-line="387" selection-start-column="58" selection-end-line="387" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/login_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="116" column="50" lean-forward="true" selection-start-line="115" selection-start-column="19" selection-end-line="116" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="336">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/create_account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
+        <state relative-caret-position="595">
           <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses_app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="756">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>
