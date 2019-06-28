@@ -6,7 +6,7 @@
         $connection = connect_database();
         $results = [];
 
-        $statement = $connection->prepare("SELECT structure_id, course_name, course_fee, course_description, 
+        $statement = $connection->prepare("SELECT structure_id, course_name, course_fee, course_highlight, 
                                     cover_image FROM course_structure ORDER BY rating_average DESC, rating_people 
                                     DESC  LIMIT 8");
         $statement->execute();
