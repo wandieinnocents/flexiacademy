@@ -5,7 +5,7 @@
     function save_course_structure() {
         $connection = connect_database();
 
-        if($_POST['category_id'] == 0){
+        if ($_POST['category_id'] == 0) {
             $statement = $connection->prepare('SELECT category_id FROM course_categories WHERE category_name = :category_name LIMIT 1');
             $statement->bindParam(':category_name', $_POST['category_name']);
             $statement->execute();
@@ -18,7 +18,7 @@
                 $category_id = $connection->lastInsertId();
             }
 
-        }else{
+        } else {
             $category_id = $_POST['category_id'];
         }
 
@@ -62,6 +62,7 @@
         }
 
 
-        echo json_encode(['code' => 1, 'structure_id' => $structure_id, 'course_categories' => $course_categories]);
+        echo json_encode(['code'              => 1, 'structure_id' => $structure_id, 'category_id' => $category_id,
+                          'course_categories' => $course_categories]);
     }
 
