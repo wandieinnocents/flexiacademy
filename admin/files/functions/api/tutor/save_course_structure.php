@@ -62,7 +62,10 @@
         }
 
 
-        echo json_encode(['code'              => 1, 'structure_id' => $structure_id, 'category_id' => $category_id,
-                          'course_categories' => $course_categories]);
+        echo json_encode([
+            'code'              => 1,
+            'structure_id'      => $structure_id,
+            'category_id'       => $category_id,
+            'course_categories' => $course_categories]);
     }
 
