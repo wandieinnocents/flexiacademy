@@ -5,16 +5,21 @@
     function save_course_structure() {
         $connection = connect_database();
 
-        $statement = $connection->prepare('SELECT category_id FROM course_categories WHERE category_name = :category_name LIMIT 1');
-        $statement->bindParam(':category_name', $_POST['category_name']);
-        $statement->execute();
-        if ($statement->rowCount() == 1) {
-            $category_id = ($statement->fetch())['category_id'];
-        } else {
-            $statement = $connection->prepare('INSERT INTO course_categories (category_name) VALUES (:category_name)');
+        if($_POST['category_id'] == 0){
+            $statement = $connection->prepare('SELECT category_id FROM course_categories WHERE category_name = :category_name LIMIT 1');
             $statement->bindParam(':category_name', $_POST['category_name']);
             $statement->execute();
-            $category_id = $this->connection->lastInsertId();
+            if ($statement->rowCount() == 1) {
+                $category_id = ($statement->fetch())['category_id'];
+            } else {
+                $statement = $connection->prepare('INSERT INTO course_categories (category_name) VALUES (:category_name)');
+                $statement->bindParam(':category_name', $_POST['category_name']);
+                $statement->execute();
+                $category_id = $this->connection->lastInsertId();
+            }
+
+        }else{
+            $category_id = $_POST['category_id'];
         }
 
         $start_date = empty($_POST['start_date']) ? 0 : $_POST['start_date'];

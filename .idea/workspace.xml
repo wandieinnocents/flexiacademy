@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,73 +60,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/web_header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="58" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8127">
-              <caret line="387" column="66" selection-start-line="387" selection-start-column="58" selection-end-line="387" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/login_user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2436">
-              <caret line="116" column="50" selection-start-line="115" selection-start-column="19" selection-end-line="116" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/create_account.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses_app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="1344">
+              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
+        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/log_out.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+            <state relative-caret-position="429">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -252,20 +199,20 @@
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_sub_modules.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_modules.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/get_course_data.php" />
-        <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/functions.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/test1.json" />
         <option value="$PROJECT_DIR$/web_header.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_misc_data.php" />
-        <option value="$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js" />
         <option value="$PROJECT_DIR$/web_footer.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/constants.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/account/login_user.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/account/create_account.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/get_tutor_courses_app.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php" />
+        <option value="$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js" />
+        <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php" />
       </list>
     </option>
   </component>
@@ -284,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,6 +311,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -376,7 +323,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555595714618" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Data/Programming/Android/Projects/Multiplex/Client/XPark" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -486,7 +433,13 @@
       <workItem from="1561685992884" duration="7359000" />
       <workItem from="1561737170575" duration="6674000" />
       <workItem from="1561789288801" duration="1139000" />
-      <workItem from="1562051498070" duration="397000" />
+      <workItem from="1562051498070" duration="1564000" />
+      <workItem from="1562077163140" duration="432000" />
+      <workItem from="1562095814601" duration="1013000" />
+      <workItem from="1562166224892" duration="951000" />
+      <workItem from="1562776119364" duration="2453000" />
+      <workItem from="1563894292794" duration="1434000" />
+      <workItem from="1563947262288" duration="1791000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -607,11 +560,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561789762712</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Displaying tutor courses on mobile app">
+      <created>1562052020332</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1562052020332</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329472000" />
+    <option name="totallyTimeSpent" value="338713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,7 +591,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23809524" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25740024" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -795,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="82" column="6" lean-forward="true" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/js/custom/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -820,13 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1218">
-          <caret line="58" column="70" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -854,16 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3241">
-          <caret line="676" column="47" selection-start-line="676" selection-start-column="47" selection-end-line="676" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/functions.php" />
     <entry file="file://$PROJECT_DIR$/admin/files/functions/ImageResize.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -874,13 +810,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/images/images/wizard_intro_icon.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tutor_courses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="105" column="85" selection-start-line="105" selection-start-column="85" selection-end-line="105" selection-end-column="85" />
-        </state>
-      </provider>
     </entry>
     <entry file="das://ac45a0c6-2801-443c-a05e-337deeee3dde/schema/flexiacademy/table/table_users" />
     <entry file="file://$PROJECT_DIR$/admin/files/images/avatars/user_avatar.png">
@@ -896,7 +825,7 @@
     <entry file="file://$PROJECT_DIR$/web_footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8127">
-          <caret line="387" column="66" selection-start-line="387" selection-start-column="58" selection-end-line="387" selection-end-column="66" />
+          <caret line="387" column="35" selection-start-line="387" selection-start-column="20" selection-end-line="387" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -921,6 +850,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/constants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -935,6 +871,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="216" column="38" selection-start-line="216" selection-start-column="38" selection-end-line="216" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor_courses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="315" column="68" selection-start-line="315" selection-start-column="8" selection-end-line="315" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_misc_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -942,10 +899,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php">
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="429">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>
