@@ -15,7 +15,7 @@
                 $statement = $connection->prepare('INSERT INTO course_categories (category_name) VALUES (:category_name)');
                 $statement->bindParam(':category_name', $_POST['category_name']);
                 $statement->execute();
-                $category_id = $this->connection->lastInsertId();
+                $category_id = $connection->lastInsertId();
             }
 
         }else{
@@ -60,6 +60,7 @@
             $category_name = $row['category_name'];
             $course_categories = $course_categories . "<option value='$category_name'>$category_name</option>";
         }
+
 
         echo json_encode(['code' => 1, 'structure_id' => $structure_id, 'course_categories' => $course_categories]);
     }
