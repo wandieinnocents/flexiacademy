@@ -50,7 +50,7 @@
         $statement->bindParam(':course_highlight', $_POST['course_highlight']);
 
         $statement->execute();
-        $structure_id = $_POST['structure_id'] == 0 ? $this->connection->lastInsertId() : $_POST['structure_id'];
+        $structure_id = $_POST['structure_id'] == 0 ? $connection->lastInsertId() : $_POST['structure_id'];
 
         $course_categories = '';
         $statement = $connection->prepare('SELECT category_name FROM course_categories ORDER BY category_name');

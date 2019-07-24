@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="295">
+              <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -331,7 +331,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -439,7 +439,7 @@
       <workItem from="1562166224892" duration="951000" />
       <workItem from="1562776119364" duration="2453000" />
       <workItem from="1563894292794" duration="1434000" />
-      <workItem from="1563947262288" duration="1791000" />
+      <workItem from="1563947262288" duration="6207000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -567,11 +567,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562052020332</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Displaying tutor courses on mobile app">
+      <created>1563949538612</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1563949538612</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Displaying tutor courses on mobile app">
+      <created>1563975759666</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563975759666</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338713000" />
+    <option name="totallyTimeSpent" value="343129000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,7 +605,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25740024" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25740024" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -625,6 +639,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Version update on 7th April 2019" />
     <MESSAGE value="Version update on 27th April 2019" />
     <MESSAGE value="Version update on 04 May 2019" />
@@ -634,6 +649,9 @@
     <MESSAGE value="Showing data on home page" />
     <MESSAGE value="Displaying tutor courses on mobile app" />
     <option name="LAST_COMMIT_MESSAGE" value="Displaying tutor courses on mobile app" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -901,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="295">
+          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
         </state>
       </provider>
     </entry>
