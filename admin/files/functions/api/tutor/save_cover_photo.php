@@ -40,7 +40,7 @@
 
             unlink($upload_path);
         } catch (Exception $e) {
-            $this->connection->rollBack();
+            $connection->rollBack();
             echo json_encode(['code' => 0, 'error' => $e->getMessage()]);
             die();
         }
@@ -49,7 +49,7 @@
         $statement->bindParam(':structure_id', $_POST['structure_id']);
         $statement->bindParam(':cover_image', $cover_image);
         if (!$statement->execute()) {
-            $this->connection->rollBack();
+            $connection->rollBack();
             echo json_encode(['code' => 0]);
             die();
         }
