@@ -54,6 +54,6 @@
             echo json_encode(['code' => 0]);
             die();
         }
-        echo json_encode(['code' => 1, 'cover' => $cover_image]);
+        echo json_encode(['code' => 1, 'cover' => $cover_image, 'data' => $_POST]);
         $connection = null;
     }
