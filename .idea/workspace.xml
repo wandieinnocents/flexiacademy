@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/account/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/course/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/home/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/student/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/temp/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/functions/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/avatars/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/images/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/pictures/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/pictures/temp/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/pictures/thumbnails/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/files/images/temp/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -86,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="1134">
+              <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -240,8 +224,8 @@
         <option value="$PROJECT_DIR$/admin/files/functions/api/courses/home/get_home_data.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php" />
-        <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php" />
         <option value="$PROJECT_DIR$/admin/files/images/pictures/thumbnails/index.php" />
+        <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php" />
       </list>
     </option>
   </component>
@@ -435,7 +419,7 @@
       <workItem from="1562776119364" duration="2453000" />
       <workItem from="1563894292794" duration="1434000" />
       <workItem from="1563947262288" duration="8588000" />
-      <workItem from="1564034872035" duration="3645000" />
+      <workItem from="1564034872035" duration="4532000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -619,11 +603,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564038359747</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Modifications for saving cover image">
+      <created>1564038933148</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1564038933148</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Modifications for saving cover image">
+      <created>1564041092548</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1564041092548</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="349155000" />
+    <option name="totallyTimeSpent" value="350042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -957,8 +955,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="1134">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
         </state>
       </provider>
     </entry>
