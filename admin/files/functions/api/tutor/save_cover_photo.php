@@ -53,6 +53,6 @@
             echo json_encode(['code' => 0]);
             die();
         }
-        echo json_encode(['code' => 1]);
+        echo json_encode(['code' => 1, 'cover' => $cover_image]);
         $connection = null;
     }
