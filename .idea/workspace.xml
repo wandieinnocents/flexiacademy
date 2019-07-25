@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/account/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/course/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/home/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/student/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/temp/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/avatars/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/images/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/pictures/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/pictures/temp/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/pictures/thumbnails/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/files/images/temp/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,15 +75,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1344">
-              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
@@ -80,10 +86,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="232">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -100,15 +111,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
               <caret line="561" column="68" selection-start-line="561" selection-start-column="63" selection-end-line="561" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_misc_data.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -189,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/files/lib/css/client/box.css" />
         <option value="$PROJECT_DIR$/web_sidebar_nav.php" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/elegant_fonts.css" />
         <option value="$PROJECT_DIR$/admin/files/lib/css/client/course_details.css" />
@@ -240,6 +241,7 @@
         <option value="$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_course_structure.php" />
         <option value="$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php" />
+        <option value="$PROJECT_DIR$/admin/files/images/pictures/thumbnails/index.php" />
       </list>
     </option>
   </component>
@@ -298,41 +300,7 @@
               <item name="files" type="462c0819:PsiDirectoryNode" />
               <item name="functions" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="courses" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="courses" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="tutor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flexiacademy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flexiacademy" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="pictures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,7 +318,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555595714618" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/files/functions/api/tutor/temp" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -361,19 +329,19 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/files/functions/api/tutor/temp" />
+      <recent name="$PROJECT_DIR$/admin/files/functions/api/account" />
+      <recent name="$PROJECT_DIR$/admin/files/functions/api/courses/student" />
+      <recent name="$PROJECT_DIR$/admin/files/functions/api/courses/course" />
+      <recent name="$PROJECT_DIR$/admin/files/functions/api/courses/home" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/admin/files/images/avatars" />
       <recent name="$PROJECT_DIR$/admin/files/functions/api/tutor" />
       <recent name="$PROJECT_DIR$/admin/files/images/avators" />
       <recent name="$PROJECT_DIR$/admin/files/lib/js/custom" />
       <recent name="$PROJECT_DIR$/admin/files/lib/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin/files/database" />
-      <recent name="$PROJECT_DIR$/admin/files/lib/js" />
-      <recent name="$PROJECT_DIR$/admin/files/images/images" />
-      <recent name="$PROJECT_DIR$/admin/files/functions" />
-      <recent name="$PROJECT_DIR$/admin/files/lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -467,7 +435,7 @@
       <workItem from="1562776119364" duration="2453000" />
       <workItem from="1563894292794" duration="1434000" />
       <workItem from="1563947262288" duration="8588000" />
-      <workItem from="1564034872035" duration="3034000" />
+      <workItem from="1564034872035" duration="3645000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -644,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564038153777</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Modifications for saving cover image">
+      <created>1564038359747</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1564038359747</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348544000" />
+    <option name="totallyTimeSpent" value="349155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -668,7 +643,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26061776" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26061776" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -723,59 +698,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/courses.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="412" column="1" selection-start-line="412" selection-start-column="1" selection-end-line="412" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/js/custom/tutor_courses.js___jb_tmp___" />
-    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/img_1556702080.jpg" />
-    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/thumbnails/img_1556702080.jpg" />
-    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/thumbnails/img_1556702409.jpg" />
-    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/temp/img_1556702045.jpg" />
-    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/thumbnails/img_1556702473.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="das://ac45a0c6-2801-443c-a05e-337deeee3dde/schema/flexiacademy/table/course_structure" />
-    <entry file="das://ac45a0c6-2801-443c-a05e-337deeee3dde/schema/flexiacademy/table/course_modules" />
-    <entry file="das://ac45a0c6-2801-443c-a05e-337deeee3dde/schema/flexiacademy/table/course_sub_modules" />
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="3303" column="10" selection-start-line="3303" selection-start-column="10" selection-end-line="3303" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/tutor_courses.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="117" column="20" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/header_footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/lib/css/client/client.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1208">
@@ -821,7 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/index.php" />
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/get_course_module_sub_modules.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -982,10 +903,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/temp/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/thumbnails/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/temp/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/images/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/avatars/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/images/pictures/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/home/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/course/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/courses/student/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/account/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/temp/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="232">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
