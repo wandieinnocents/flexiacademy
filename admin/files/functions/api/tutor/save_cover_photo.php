@@ -8,6 +8,7 @@
 
     function save_cover_photo() {
         $connection = connect_database();
+        $connection->beginTransaction();
         $parent = "../../../images/pictures/";
 
         $statement = $connection->prepare('SELECT cover_image FROM course_structure WHERE structure_id = :structure_id LIMIT 1');

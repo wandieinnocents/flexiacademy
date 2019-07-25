@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+            <state relative-caret-position="210">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -467,7 +467,7 @@
       <workItem from="1562776119364" duration="2453000" />
       <workItem from="1563894292794" duration="1434000" />
       <workItem from="1563947262288" duration="8588000" />
-      <workItem from="1564034872035" duration="2060000" />
+      <workItem from="1564034872035" duration="3034000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -630,11 +630,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563978789996</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Modifications for saving cover image">
+      <created>1564037016802</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1564037016802</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Modifications for saving cover image">
+      <created>1564038153777</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1564038153777</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347570000" />
+    <option name="totallyTimeSpent" value="348544000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,7 +712,8 @@
     <MESSAGE value="Showing data on home page" />
     <MESSAGE value="Displaying tutor courses on mobile app" />
     <MESSAGE value="Modifications for saving tutor courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifications for saving tutor courses" />
+    <MESSAGE value="Modifications for saving cover image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications for saving cover image" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -969,8 +984,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/files/functions/api/tutor/save_cover_photo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+        <state relative-caret-position="210">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
