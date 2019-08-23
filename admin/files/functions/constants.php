@@ -18,6 +18,8 @@
     define("password", "MNPnXdX3q9A8");;
     define("dbname", "digitalr_flexi");
 
+    define('API_ACCESS_KEY', 'AIzaSyASYFGdLS3ebL8RkWwpec858N7iQYeba04');
+
 
     function connect_database() {
         $options = [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'];
