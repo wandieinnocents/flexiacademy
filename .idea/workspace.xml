@@ -4,7 +4,6 @@
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/create_chat_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/create_chat_group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/process_message.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/process_message.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +265,7 @@
       <workItem from="1563947262288" duration="8588000" />
       <workItem from="1564034872035" duration="5419000" />
       <workItem from="1564661964714" duration="215000" />
-      <workItem from="1566530777286" duration="8485000" />
+      <workItem from="1566530777286" duration="9603000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -478,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566539227329</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added support for mobile one to one and one to many messaging">
+      <created>1566549685046</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1566549685046</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">

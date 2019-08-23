@@ -19,7 +19,7 @@
         $statement->bindParam(':chat_participants', $_POST['chat_participants']);
         $statement->bindParam(':last_message_text', $_POST['last_message_text']);
         $statement->bindParam(':last_message_time', $time);
-        $statement->bindParam(':time_created', $time_created);
+        $statement->bindParam(':time_created', $time);
         $statement->execute();
 
         $chat_id = $connection->lastInsertId();
