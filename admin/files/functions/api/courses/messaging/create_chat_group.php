@@ -5,6 +5,7 @@
 
     function create_chat_group() {
         $connection = connect_database();
+        $_POST = json_decode(file_get_contents('php://input'), true);
 
         $statement = $connection->prepare("INSERT INTO chat_data (created_by, chat_name, chat_type, chat_description, 
                        chat_participants, last_message_text, last_message_time, time_created) VALUES (:created_by, :chat_name, :chat_type, 

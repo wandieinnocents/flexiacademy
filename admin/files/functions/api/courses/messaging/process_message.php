@@ -5,7 +5,7 @@
 
     function process_message() {
         $connection = connect_database();
-
+        $_POST = json_decode(file_get_contents('php://input'), true);
 
         $statement = $connection->prepare("INSERT INTO chat_messages (sender_id, chat_id, time_sent, message_data,
                            delivered_to, read_by, message_status) VALUES (:sender_id, :chat_id, :time_sent, :message_data,
