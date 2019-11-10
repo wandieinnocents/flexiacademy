@@ -7,7 +7,7 @@
     function get_personnel() {
         $connection = connect_database();
 
-        $statement = $connection->prepare("SELECT user_id, first_name, last_name, user_name, date_of_birth, email_address, 
+        $statement = $connection->prepare("SELECT user_id, first_name, last_name, full_name, date_of_birth, email_address, 
             mobile_contact,  profile_picture FROM table_users WHERE fcm_token <> '' ORDER BY last_name, first_name");
         $statement->execute();
         $users = $statement->fetchAll();

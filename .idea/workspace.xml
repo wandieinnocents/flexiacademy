@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f363a7a-f4e3-4bb9-b0a6-7fd6b36e226d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/files/functions/api/account/account_creation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ac45a0c6-2801-443c-a05e-337deeee3dde.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ac45a0c6-2801-443c-a05e-337deeee3dde.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/create_chat_group.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/create_chat_group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/database/flexiacademy.sql" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/database/flexiacademy.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/account/create_account.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/account/login_user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/get_course_participants.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/get_course_participants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/get_missing_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/files/functions/api/courses/messaging/get_missing_users.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +48,13 @@
         <item name="flexiacademy@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flexiacademy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flexiacademy@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flexiacademy: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="table_users: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -265,7 +278,8 @@
       <workItem from="1563947262288" duration="8588000" />
       <workItem from="1564034872035" duration="5419000" />
       <workItem from="1564661964714" duration="215000" />
-      <workItem from="1566530777286" duration="9603000" />
+      <workItem from="1566530777286" duration="12143000" />
+      <workItem from="1573412143349" duration="851000" />
     </task>
     <task id="LOCAL-00001" summary="Version update on 7th April 2019">
       <created>1554655851784</created>
@@ -484,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566549685046</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Added support for mobile one to one and one to many messaging">
+      <created>1566551606447</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1566551606447</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -504,7 +525,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

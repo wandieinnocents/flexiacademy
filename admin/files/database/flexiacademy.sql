@@ -178,7 +178,9 @@ CREATE TABLE `table_users` (
 -- Dumping data for table `table_users`
 --
 
-INSERT INTO `table_users` (`user_id`, `first_name`, `last_name`, `user_name`, `date_of_birth`, `email_address`, `mobile_contact`, `user_password`, `password_salt`, `user_account`, `user_roles`, `profile_picture`) VALUES
+INSERT INTO `table_users` (`user_id`, `first_name`, `last_name`, full_name, `date_of_birth`, `email_address`, `mobile_contact`,
+                           `user_password`, `password_salt`, `user_account`, `user_roles`, `profile_picture`)
+VALUES
 (1, 'William', 'Pande', 'WilliamPande', 755038800, 'pandewilliam100@gmail.com', '256703683125', '', '', 'google.com', '{\"student\":1}', 'https://lh5.googleusercontent.com/-HOMEeRxBWrY/AAAAAAAAAAI/AAAAAAAAADk/nU98XKFlJRw/photo.jpg'),
 (2, 'William', 'Pande', '', -100000000000, 'pande.william67@gmail.com', '', '', '', 'facebook.com', '{\"student\":1}', 'https://graph.facebook.com/1446470715487783/picture');
 
